@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/thenameisvir/LeetCode/tree/master/0075-sort-colors) |
 | [0932-monotonic-array](https://github.com/thenameisvir/LeetCode/tree/master/0932-monotonic-array) |
 | [1293-three-consecutive-odds](https://github.com/thenameisvir/LeetCode/tree/master/1293-three-consecutive-odds) |
+| [2094-remove-stones-to-minimize-the-total](https://github.com/thenameisvir/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
 ## Two Pointers
 |  |
 | ------- |
@@ -23,4 +24,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/thenameisvir/LeetCode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
+## Greedy
+|  |
+| ------- |
+| [2094-remove-stones-to-minimize-the-total](https://github.com/thenameisvir/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [2094-remove-stones-to-minimize-the-total](https://github.com/thenameisvir/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
 <!---LeetCode Topics End-->
