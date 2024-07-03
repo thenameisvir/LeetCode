@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/thenameisvir/LeetCode/tree/master/0027-remove-element) |
 | [0075-sort-colors](https://github.com/thenameisvir/LeetCode/tree/master/0075-sort-colors) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/thenameisvir/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0932-monotonic-array](https://github.com/thenameisvir/LeetCode/tree/master/0932-monotonic-array) |
@@ -13,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/thenameisvir/LeetCode/tree/master/0027-remove-element) |
 | [0075-sort-colors](https://github.com/thenameisvir/LeetCode/tree/master/0075-sort-colors) |
 | [0141-linked-list-cycle](https://github.com/thenameisvir/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/thenameisvir/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
