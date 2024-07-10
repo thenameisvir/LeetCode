@@ -26,10 +26,34 @@ public:
         return dp[index];
 
     }
+    int solvebytabulation(vector<int>& nums){
+    
+        if(nums.size()<=0) return 0;
+        int n = nums.size();
+        vector<int>dp(nums.size(),-1);
+
+        dp[n-1] = nums[n-1];
+
+        for(int index = n-2;index>=0;index--){
+            int tempans = 0;
+            if(index+2<n){
+                tempans = dp[index+2];
+            }
+            int include = nums[index] + tempans;
+            // logic of exclude
+            int exclude = 0 + dp[index+1];
+
+            dp[index] = max(include,exclude);
+        }
+
+        return dp[0];
+        
+        
+    }
     int rob(vector<int>& nums) {
         int index = 0;
         vector<int>dp(nums.size(),-1);
-        int ans = solveebymemoisation(nums,index,dp);
+        int ans = solvebytabulation(nums);
         return ans;
     }
 };
