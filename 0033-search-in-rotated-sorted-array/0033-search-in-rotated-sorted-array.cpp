@@ -103,9 +103,9 @@ public:
         }
 
         // If the target is the pivot element
-        // if (arr[pivot] == target) {
-        //     return pivot;
-        // }
+        if (arr[pivot] == target) {
+            return pivot;
+        }
 
         // Determine which part of the array to search in
         if(target >= arr[0] && target <= arr[pivot]){
