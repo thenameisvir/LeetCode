@@ -93,7 +93,7 @@ public:
 
     int search(vector<int>& arr, int target) {
         int n = arr.size();
-        // if (n == 0) return -1;/
+        if (n == 0) return -1;
 
         int pivot = findpivot(arr);
 
@@ -103,9 +103,9 @@ public:
         }
 
         // If the target is the pivot element
-        if (arr[pivot] == target) {
-            return pivot;
-        }
+        // if (arr[pivot] == target) {
+        //     return pivot;
+        // }
 
         // Determine which part of the array to search in
         if(target >= arr[0] && target <= arr[pivot]){
