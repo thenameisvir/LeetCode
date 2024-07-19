@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0932-monotonic-array](https://github.com/thenameisvir/LeetCode/tree/master/0932-monotonic-array) |
 | [1207-delete-nodes-and-return-forest](https://github.com/thenameisvir/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1293-three-consecutive-odds](https://github.com/thenameisvir/LeetCode/tree/master/1293-three-consecutive-odds) |
+| [1496-lucky-numbers-in-a-matrix](https://github.com/thenameisvir/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/thenameisvir/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1720-crawler-log-folder](https://github.com/thenameisvir/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1803-average-waiting-time](https://github.com/thenameisvir/LeetCode/tree/master/1803-average-waiting-time) |
@@ -156,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/thenameisvir/LeetCode/tree/master/0054-spiral-matrix) |
+| [1496-lucky-numbers-in-a-matrix](https://github.com/thenameisvir/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 ## Sliding Window
 |  |
 | ------- |
