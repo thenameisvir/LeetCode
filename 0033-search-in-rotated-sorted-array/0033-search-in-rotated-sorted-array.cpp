@@ -93,7 +93,7 @@ public:
 
     int search(vector<int>& arr, int target) {
         int n = arr.size();
-        if (n == 0) return -1;
+        // if (n == 0) return -1;/
 
         int pivot = findpivot(arr);
 
