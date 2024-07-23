@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/thenameisvir/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/thenameisvir/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1720-crawler-log-folder](https://github.com/thenameisvir/LeetCode/tree/master/1720-crawler-log-folder) |
+| [1741-sort-array-by-increasing-frequency](https://github.com/thenameisvir/LeetCode/tree/master/1741-sort-array-by-increasing-frequency) |
 | [1803-average-waiting-time](https://github.com/thenameisvir/LeetCode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/thenameisvir/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/thenameisvir/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
@@ -59,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/thenameisvir/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0948-sort-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0948-sort-an-array) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/thenameisvir/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
+| [1741-sort-array-by-increasing-frequency](https://github.com/thenameisvir/LeetCode/tree/master/1741-sort-array-by-increasing-frequency) |
 | [2502-sort-the-people](https://github.com/thenameisvir/LeetCode/tree/master/2502-sort-the-people) |
 | [2846-robot-collisions](https://github.com/thenameisvir/LeetCode/tree/master/2846-robot-collisions) |
 ## Union Find
@@ -91,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/thenameisvir/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0532-k-diff-pairs-in-an-array) |
 | [1207-delete-nodes-and-return-forest](https://github.com/thenameisvir/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
+| [1741-sort-array-by-increasing-frequency](https://github.com/thenameisvir/LeetCode/tree/master/1741-sort-array-by-increasing-frequency) |
 | [2502-sort-the-people](https://github.com/thenameisvir/LeetCode/tree/master/2502-sort-the-people) |
 ## Binary Search
 |  |
