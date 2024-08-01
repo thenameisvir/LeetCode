@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1803-average-waiting-time](https://github.com/thenameisvir/LeetCode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/thenameisvir/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/thenameisvir/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
+| [2231-find-first-palindromic-string-in-the-array](https://github.com/thenameisvir/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2472-build-a-matrix-with-conditions](https://github.com/thenameisvir/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 | [2502-sort-the-people](https://github.com/thenameisvir/LeetCode/tree/master/2502-sort-the-people) |
 | [2846-robot-collisions](https://github.com/thenameisvir/LeetCode/tree/master/2846-robot-collisions) |
@@ -63,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/thenameisvir/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0658-find-k-closest-elements](https://github.com/thenameisvir/LeetCode/tree/master/0658-find-k-closest-elements) |
+| [2231-find-first-palindromic-string-in-the-array](https://github.com/thenameisvir/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 ## Sorting
 |  |
 | ------- |
@@ -196,6 +198,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1720-crawler-log-folder](https://github.com/thenameisvir/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/thenameisvir/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/thenameisvir/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
+| [2231-find-first-palindromic-string-in-the-array](https://github.com/thenameisvir/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2235-capitalize-the-title](https://github.com/thenameisvir/LeetCode/tree/master/2235-capitalize-the-title) |
 | [2502-sort-the-people](https://github.com/thenameisvir/LeetCode/tree/master/2502-sort-the-people) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/thenameisvir/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
