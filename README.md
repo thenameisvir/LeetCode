@@ -195,6 +195,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0058-length-of-last-word](https://github.com/thenameisvir/LeetCode/tree/master/0058-length-of-last-word) |
 | [0125-valid-palindrome](https://github.com/thenameisvir/LeetCode/tree/master/0125-valid-palindrome) |
 | [0344-reverse-string](https://github.com/thenameisvir/LeetCode/tree/master/0344-reverse-string) |
+| [1128-remove-all-adjacent-duplicates-in-string](https://github.com/thenameisvir/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/thenameisvir/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/thenameisvir/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/thenameisvir/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
@@ -207,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [1128-remove-all-adjacent-duplicates-in-string](https://github.com/thenameisvir/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/thenameisvir/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/thenameisvir/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/thenameisvir/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
