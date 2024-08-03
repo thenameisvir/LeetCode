@@ -13,42 +13,36 @@ public:
         int lastM = 0;
         int lastG = 0;
 
-        // Calculate pick time and travel time
-
         for(int i=0;i<garbage.size();i++){
-            string curr = garbage[i];
-            for(int j=0;j<curr.length();j++){
-                char ch = curr[j];
-
-                if(ch=='P'){
-                    pickP++;
-                    lastP = i;
+            string str = garbage[i];
+            for(int j=0;j<str.length();j++){
+                char ch = str[j];
+                if(ch=='G'){
+                    pickG++;
+                    lastG = i;
                 }
                 if(ch=='M'){
                     pickM++;
                     lastM = i;
                 }
-                if(ch=='G'){
-                    pickG++;
-                    lastG = i;
+                if(ch=='P'){
+                    pickP++;
+                    lastP = i;
                 }
             }
         }
 
-        // calculate travel time
-
         for(int i=0;i<lastP;i++){
             travelP+=travel[i];
-        }
-        for(int i=0;i<lastG;i++){
-            travelG+=travel[i];
         }
         for(int i=0;i<lastM;i++){
             travelM+=travel[i];
         }
+        for(int i=0;i<lastG;i++){
+            travelG+=travel[i];
+        }
 
-        int ans = (pickP + travelP) + (pickM + travelM) + (pickG + travelG);
+        int ans = (pickP+travelP)+(pickM+travelM)+(pickG+travelG);
         return ans;
-
     }
 };
