@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2094-remove-stones-to-minimize-the-total](https://github.com/thenameisvir/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/thenameisvir/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/thenameisvir/LeetCode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
+| [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/thenameisvir/LeetCode/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2472-build-a-matrix-with-conditions](https://github.com/thenameisvir/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 | [2502-sort-the-people](https://github.com/thenameisvir/LeetCode/tree/master/2502-sort-the-people) |
 | [2727-number-of-senior-citizens](https://github.com/thenameisvir/LeetCode/tree/master/2727-number-of-senior-citizens) |
@@ -208,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/thenameisvir/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2235-capitalize-the-title](https://github.com/thenameisvir/LeetCode/tree/master/2235-capitalize-the-title) |
 | [2406-decode-the-message](https://github.com/thenameisvir/LeetCode/tree/master/2406-decode-the-message) |
+| [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/thenameisvir/LeetCode/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2502-sort-the-people](https://github.com/thenameisvir/LeetCode/tree/master/2502-sort-the-people) |
 | [2727-number-of-senior-citizens](https://github.com/thenameisvir/LeetCode/tree/master/2727-number-of-senior-citizens) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/thenameisvir/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
@@ -224,6 +226,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0724-find-pivot-index](https://github.com/thenameisvir/LeetCode/tree/master/0724-find-pivot-index) |
+| [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/thenameisvir/LeetCode/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 ## Bit Manipulation
 |  |
 | ------- |
