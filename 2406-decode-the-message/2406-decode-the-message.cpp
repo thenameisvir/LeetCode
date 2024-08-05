@@ -1,20 +1,18 @@
 class Solution {
 public:
     string decodeMessage(string key, string message) {
-        char start = 'a';
+        char s = 'a';
         char arr[300] = {0};
         for(auto ch:key){
-            if(ch!=' ' && arr[ch]==0){
-                arr[ch] = start;
-                start++;
-            }
+           if(ch!=' '&& arr[ch]==0){
+             arr[ch] = s;
+             s++;
+           }
         }
 
-        string ans = "";
-
-        for(int i=0;i<message.length();i++){
-            char ch = message[i];
-
+        string ans;
+        for( auto ch: message){
+            
             if(ch==' '){
                 ans.push_back(' ');
             }
@@ -23,6 +21,7 @@ public:
                 ans.push_back(decoder);
             }
         }
+
         return ans;
     }
 };
