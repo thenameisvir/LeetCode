@@ -1,35 +1,48 @@
 class Solution {
 public:
-    void createMapping(string &str){
-        // create mapping
-        char start = 'a';
-        unordered_map<char, char> arr;
-
-        for(auto ch: str){
-            if(arr[ch]==0){
-                arr[ch] = start;
-                start++;
-            }
-        }
-
-        // update the string
-        for(int i=0;i<str.length();i++){
-            str[i] = arr[str[i]];
-        }
-    }
-
     vector<string> findAndReplacePattern(vector<string>& words, string pattern) {
-        vector<string> ans;
-        createMapping(pattern);
-
-        for(string s: words){
-            string temp = s;
-            createMapping(temp);
-            if(temp == pattern){
-                ans.push_back(s);
+        char s = 'a';
+        char arr[200] = {0};
+        string str = "";
+        for(auto ch:pattern){
+            if(arr[ch]==0){
+                arr[ch] = s;
+                s++;
             }
         }
 
-        return ans;
+        for(auto ch:pattern){
+            char decoder = arr[ch];
+            str.push_back(decoder);
+        }
+        vector<string>final;
+        for(int i=0;i<words.size();i++){
+            char start = 'a';
+            string str2 = "";
+            char arr2[200] = {0};
+            string curr = words[i];
+            for(auto ch:curr){
+                if(arr2[ch]==0){
+                    arr2[ch] = start;
+                    start++;
+                }
+            }
+
+            for(auto ch:curr){
+                char decoder = arr2[ch];
+                str2.push_back(decoder);
+            }
+
+            final.push_back(str2);
+        }
+        vector<string>full_n_final;
+        for(int i=0;i<final.size();i++){
+            string curr = final[i];
+            if(curr==str){
+            full_n_final.push_back(words[i]);
+            }
+        }
+
+        return full_n_final;
     }
 };
