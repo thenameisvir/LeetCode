@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/thenameisvir/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0724-find-pivot-index](https://github.com/thenameisvir/LeetCode/tree/master/0724-find-pivot-index) |
 | [0792-binary-search](https://github.com/thenameisvir/LeetCode/tree/master/0792-binary-search) |
+| [0921-spiral-matrix-iii](https://github.com/thenameisvir/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [0926-find-and-replace-pattern](https://github.com/thenameisvir/LeetCode/tree/master/0926-find-and-replace-pattern) |
 | [0932-monotonic-array](https://github.com/thenameisvir/LeetCode/tree/master/0932-monotonic-array) |
 | [0948-sort-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0948-sort-an-array) |
@@ -177,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/thenameisvir/LeetCode/tree/master/0054-spiral-matrix) |
+| [0921-spiral-matrix-iii](https://github.com/thenameisvir/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [1642-water-bottles](https://github.com/thenameisvir/LeetCode/tree/master/1642-water-bottles) |
 | [1803-average-waiting-time](https://github.com/thenameisvir/LeetCode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/thenameisvir/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -270,6 +272,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/thenameisvir/LeetCode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/thenameisvir/LeetCode/tree/master/0054-spiral-matrix) |
 | [0074-search-a-2d-matrix](https://github.com/thenameisvir/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0921-spiral-matrix-iii](https://github.com/thenameisvir/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/thenameisvir/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/thenameisvir/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [2472-build-a-matrix-with-conditions](https://github.com/thenameisvir/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
