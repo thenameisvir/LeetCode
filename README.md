@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/thenameisvir/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0724-find-pivot-index](https://github.com/thenameisvir/LeetCode/tree/master/0724-find-pivot-index) |
 | [0792-binary-search](https://github.com/thenameisvir/LeetCode/tree/master/0792-binary-search) |
+| [0870-magic-squares-in-grid](https://github.com/thenameisvir/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/thenameisvir/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [0926-find-and-replace-pattern](https://github.com/thenameisvir/LeetCode/tree/master/0926-find-and-replace-pattern) |
 | [0932-monotonic-array](https://github.com/thenameisvir/LeetCode/tree/master/0932-monotonic-array) |
@@ -133,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/thenameisvir/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0807-custom-sort-string](https://github.com/thenameisvir/LeetCode/tree/master/0807-custom-sort-string) |
+| [0870-magic-squares-in-grid](https://github.com/thenameisvir/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [0926-find-and-replace-pattern](https://github.com/thenameisvir/LeetCode/tree/master/0926-find-and-replace-pattern) |
 | [1207-delete-nodes-and-return-forest](https://github.com/thenameisvir/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/thenameisvir/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
@@ -192,6 +194,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0069-sqrtx](https://github.com/thenameisvir/LeetCode/tree/master/0069-sqrtx) |
 | [0189-rotate-array](https://github.com/thenameisvir/LeetCode/tree/master/0189-rotate-array) |
 | [0273-integer-to-english-words](https://github.com/thenameisvir/LeetCode/tree/master/0273-integer-to-english-words) |
+| [0870-magic-squares-in-grid](https://github.com/thenameisvir/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [1013-fibonacci-number](https://github.com/thenameisvir/LeetCode/tree/master/1013-fibonacci-number) |
 | [1642-water-bottles](https://github.com/thenameisvir/LeetCode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/thenameisvir/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -272,6 +275,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/thenameisvir/LeetCode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/thenameisvir/LeetCode/tree/master/0054-spiral-matrix) |
 | [0074-search-a-2d-matrix](https://github.com/thenameisvir/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0870-magic-squares-in-grid](https://github.com/thenameisvir/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/thenameisvir/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/thenameisvir/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/thenameisvir/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
