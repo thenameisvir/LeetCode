@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/thenameisvir/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0540-single-element-in-a-sorted-array](https://github.com/thenameisvir/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
+| [0624-maximum-distance-in-arrays](https://github.com/thenameisvir/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
 | [0643-maximum-average-subarray-i](https://github.com/thenameisvir/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 | [0658-find-k-closest-elements](https://github.com/thenameisvir/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/thenameisvir/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
@@ -121,6 +122,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0624-maximum-distance-in-arrays](https://github.com/thenameisvir/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
 | [0680-valid-palindrome-ii](https://github.com/thenameisvir/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0890-lemonade-change](https://github.com/thenameisvir/LeetCode/tree/master/0890-lemonade-change) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/thenameisvir/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
