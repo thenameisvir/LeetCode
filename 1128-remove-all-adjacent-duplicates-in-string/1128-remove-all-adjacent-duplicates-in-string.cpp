@@ -1,17 +1,16 @@
 class Solution {
 public:
     string removeDuplicates(string s) {
-        string ans = "";
-        int index = 0;
-        while(index<s.length()){
-
-            if(ans.length()>0 && ans[ans.length()-1]==s[index]){
+         string ans = "";
+        int i = 0;
+        while(i<s.length()){
+            if(ans.length()>0 && ans[ans.length()-1]==s[i]){
                 ans.pop_back();
             }
             else{
-                ans.push_back(s[index]);
+                ans.push_back(s[i]);
             }
-            index++;
+            i++;
         }
         return ans;
     }
