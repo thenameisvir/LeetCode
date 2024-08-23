@@ -9,9 +9,9 @@ public:
             }
         }
 
-        long long int ans = 0;
+        int ans = 0;
         for(int i=1;i<v.size();i++){
-            ans += v[i] * v[i-1];
+            ans+=v[i]*v[i-1];
         }
 
         return ans;
