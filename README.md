@@ -59,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2094-remove-stones-to-minimize-the-total](https://github.com/thenameisvir/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/thenameisvir/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
+| [2244-number-of-laser-beams-in-a-bank](https://github.com/thenameisvir/LeetCode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/thenameisvir/LeetCode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/thenameisvir/LeetCode/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2472-build-a-matrix-with-conditions](https://github.com/thenameisvir/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
@@ -229,6 +230,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1240-stone-game-ii](https://github.com/thenameisvir/LeetCode/tree/master/1240-stone-game-ii) |
 | [1642-water-bottles](https://github.com/thenameisvir/LeetCode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/thenameisvir/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2244-number-of-laser-beams-in-a-bank](https://github.com/thenameisvir/LeetCode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2645-pass-the-pillow](https://github.com/thenameisvir/LeetCode/tree/master/2645-pass-the-pillow) |
 ## Dynamic Programming
 |  |
@@ -291,6 +293,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2163-kth-distinct-string-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/thenameisvir/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2235-capitalize-the-title](https://github.com/thenameisvir/LeetCode/tree/master/2235-capitalize-the-title) |
+| [2244-number-of-laser-beams-in-a-bank](https://github.com/thenameisvir/LeetCode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2406-decode-the-message](https://github.com/thenameisvir/LeetCode/tree/master/2406-decode-the-message) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/thenameisvir/LeetCode/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2502-sort-the-people](https://github.com/thenameisvir/LeetCode/tree/master/2502-sort-the-people) |
@@ -330,6 +333,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1496-lucky-numbers-in-a-matrix](https://github.com/thenameisvir/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/thenameisvir/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/thenameisvir/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
+| [2244-number-of-laser-beams-in-a-bank](https://github.com/thenameisvir/LeetCode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2472-build-a-matrix-with-conditions](https://github.com/thenameisvir/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 ## Sliding Window
 |  |
