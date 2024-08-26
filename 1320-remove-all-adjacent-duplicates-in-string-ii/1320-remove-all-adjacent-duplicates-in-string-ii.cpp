@@ -1,12 +1,12 @@
 class Solution {
 public:
+
     bool kminusone(char&ch,string&ans,int k_1){
         int it = ans.length()-1;
         for(int i=0;i<k_1;i++){
             if(ans[it]!=ch) return false;
             it--;
         }
-
         return true;
     }
     string removeDuplicates(string s, int k) {
