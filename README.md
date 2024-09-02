@@ -231,6 +231,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0012-integer-to-roman](https://github.com/thenameisvir/LeetCode/tree/master/0012-integer-to-roman) |
 | [0048-rotate-image](https://github.com/thenameisvir/LeetCode/tree/master/0048-rotate-image) |
 | [0069-sqrtx](https://github.com/thenameisvir/LeetCode/tree/master/0069-sqrtx) |
+| [0070-climbing-stairs](https://github.com/thenameisvir/LeetCode/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/thenameisvir/LeetCode/tree/master/0189-rotate-array) |
 | [0264-ugly-number-ii](https://github.com/thenameisvir/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0273-integer-to-english-words](https://github.com/thenameisvir/LeetCode/tree/master/0273-integer-to-english-words) |
@@ -249,6 +250,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/thenameisvir/LeetCode/tree/master/0005-longest-palindromic-substring) |
+| [0070-climbing-stairs](https://github.com/thenameisvir/LeetCode/tree/master/0070-climbing-stairs) |
 | [0198-house-robber](https://github.com/thenameisvir/LeetCode/tree/master/0198-house-robber) |
 | [0264-ugly-number-ii](https://github.com/thenameisvir/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0650-2-keys-keyboard](https://github.com/thenameisvir/LeetCode/tree/master/0650-2-keys-keyboard) |
@@ -269,6 +271,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Memoization
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/thenameisvir/LeetCode/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/thenameisvir/LeetCode/tree/master/1013-fibonacci-number) |
 ## Queue
 |  |
