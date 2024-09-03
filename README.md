@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/thenameisvir/LeetCode/tree/master/0198-house-robber) |
 | [0215-kth-largest-element-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0287-find-the-duplicate-number](https://github.com/thenameisvir/LeetCode/tree/master/0287-find-the-duplicate-number) |
+| [0322-coin-change](https://github.com/thenameisvir/LeetCode/tree/master/0322-coin-change) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/thenameisvir/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0539-minimum-time-difference](https://github.com/thenameisvir/LeetCode/tree/master/0539-minimum-time-difference) |
@@ -257,6 +258,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/thenameisvir/LeetCode/tree/master/0070-climbing-stairs) |
 | [0198-house-robber](https://github.com/thenameisvir/LeetCode/tree/master/0198-house-robber) |
 | [0264-ugly-number-ii](https://github.com/thenameisvir/LeetCode/tree/master/0264-ugly-number-ii) |
+| [0322-coin-change](https://github.com/thenameisvir/LeetCode/tree/master/0322-coin-change) |
 | [0650-2-keys-keyboard](https://github.com/thenameisvir/LeetCode/tree/master/0650-2-keys-keyboard) |
 | [0664-strange-printer](https://github.com/thenameisvir/LeetCode/tree/master/0664-strange-printer) |
 | [1013-fibonacci-number](https://github.com/thenameisvir/LeetCode/tree/master/1013-fibonacci-number) |
@@ -427,6 +429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Breadth-First Search
 |  |
 | ------- |
+| [0322-coin-change](https://github.com/thenameisvir/LeetCode/tree/master/0322-coin-change) |
 | [0999-regions-cut-by-slashes](https://github.com/thenameisvir/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/thenameisvir/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [2035-count-sub-islands](https://github.com/thenameisvir/LeetCode/tree/master/2035-count-sub-islands) |
