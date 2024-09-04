@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0792-binary-search](https://github.com/thenameisvir/LeetCode/tree/master/0792-binary-search) |
 | [0870-magic-squares-in-grid](https://github.com/thenameisvir/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [0890-lemonade-change](https://github.com/thenameisvir/LeetCode/tree/master/0890-lemonade-change) |
+| [0906-walking-robot-simulation](https://github.com/thenameisvir/LeetCode/tree/master/0906-walking-robot-simulation) |
 | [0921-spiral-matrix-iii](https://github.com/thenameisvir/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [0926-find-and-replace-pattern](https://github.com/thenameisvir/LeetCode/tree/master/0926-find-and-replace-pattern) |
 | [0932-monotonic-array](https://github.com/thenameisvir/LeetCode/tree/master/0932-monotonic-array) |
@@ -170,6 +171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0532-k-diff-pairs-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0807-custom-sort-string](https://github.com/thenameisvir/LeetCode/tree/master/0807-custom-sort-string) |
 | [0870-magic-squares-in-grid](https://github.com/thenameisvir/LeetCode/tree/master/0870-magic-squares-in-grid) |
+| [0906-walking-robot-simulation](https://github.com/thenameisvir/LeetCode/tree/master/0906-walking-robot-simulation) |
 | [0926-find-and-replace-pattern](https://github.com/thenameisvir/LeetCode/tree/master/0926-find-and-replace-pattern) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/thenameisvir/LeetCode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/thenameisvir/LeetCode/tree/master/0999-regions-cut-by-slashes) |
@@ -220,6 +222,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0054-spiral-matrix](https://github.com/thenameisvir/LeetCode/tree/master/0054-spiral-matrix) |
 | [0592-fraction-addition-and-subtraction](https://github.com/thenameisvir/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
+| [0906-walking-robot-simulation](https://github.com/thenameisvir/LeetCode/tree/master/0906-walking-robot-simulation) |
 | [0921-spiral-matrix-iii](https://github.com/thenameisvir/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [1642-water-bottles](https://github.com/thenameisvir/LeetCode/tree/master/1642-water-bottles) |
 | [1803-average-waiting-time](https://github.com/thenameisvir/LeetCode/tree/master/1803-average-waiting-time) |
