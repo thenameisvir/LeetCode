@@ -1,59 +1,18 @@
-class Solution {
-public:
-    int solvebyrecursion(vector<int>&nums,int index){
-        if(index>=nums.size()) return 0;
+class Solution {  
+public:  
+    int rob(vector<int>& arr) {  
+        if (arr.empty()) return 0;  
+        if (arr.size() == 1) return arr[0];  
 
-        // logic of include
-        int include = nums[index] + solvebyrecursion(nums,index+2);
-        // logic of exclude
-        int exclude = 0 + solvebyrecursion(nums,index+1);
+        int prev1 = 0; // Max amount robbed up to the previous house  
+        int prev2 = 0; // Max amount robbed up to the house before the previous one  
 
-        int pa = max(include,exclude);
-        return pa;
-    }
-    int solveebymemoisation(vector<int>& nums,int index,vector<int>&dp){
-        if(index>=nums.size()) return 0;
+        for (int i = 0; i < arr.size(); i++) {  
+            int current = max(prev2 + arr[i], prev1); // Choose to rob current house or not  
+            prev2 = prev1; // Move prev1 to prev2  
+            prev1 = current; // Update prev1 to current  
+        }  
 
-        if(dp[index]!=-1) return dp[index];
-
-        // logic of include
-        int include = nums[index] + solveebymemoisation(nums,index+2,dp);
-        // logic of exclude
-        int exclude = 0 + solveebymemoisation(nums,index+1,dp);
-
-        dp[index] = max(include,exclude);
-
-        return dp[index];
-
-    }
-    int solvebytabulation(vector<int>& nums){
-    
-        if(nums.size()<=0) return 0;
-        int n = nums.size();
-        vector<int>dp(nums.size(),-1);
-
-        dp[n-1] = nums[n-1];
-
-        for(int index = n-2;index>=0;index--){
-            int tempans = 0;
-            if(index+2<n){
-                tempans = dp[index+2];
-            }
-            int include = nums[index] + tempans;
-            // logic of exclude
-            int exclude = 0 + dp[index+1];
-
-            dp[index] = max(include,exclude);
-        }
-
-        return dp[0];
-        
-        
-    }
-    int rob(vector<int>& nums) {
-        int index = 0;
-        vector<int>dp(nums.size(),-1);
-        int ans = solvebytabulation(nums);
-        return ans;
-    }
+        return prev1; // The last computed value is the maximum amount that can be robbed  
+    }  
 };
