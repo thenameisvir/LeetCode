@@ -1,44 +1,32 @@
 class Solution {
 public:
+    vector<pair<int, string>> mp = {
+        {1000000000, "Billion"}, {1000000, "Million"}, {1000, "Thousand"}, {100, "Hundred"},
+        {90, "Ninety"}, {80, "Eighty"}, {70, "Seventy"}, {60, "Sixty"}, {50, "Fifty"},
+        {40, "Forty"}, {30, "Thirty"}, {20, "Twenty"}, {19, "Nineteen"}, {18, "Eighteen"},
+        {17, "Seventeen"}, {16, "Sixteen"}, {15, "Fifteen"}, {14, "Fourteen"}, {13, "Thirteen"},
+        {12, "Twelve"}, {11, "Eleven"}, {10, "Ten"}, {9, "Nine"}, {8, "Eight"},
+        {7, "Seven"}, {6, "Six"}, {5, "Five"}, {4, "Four"}, {3, "Three"}, {2, "Two"}, {1, "One"}
+    };
+
     string numberToWords(int num) {
         if (num == 0) return "Zero";
-        
-        string bigString[] = {"Thousand", "Million", "Billion"};
-        string result = numberToWordsHelper(num % 1000);
-        num /= 1000;
 
-        for (int i = 0; i < 3; ++i) {
-            if (num > 0 && num % 1000 > 0) {
-                result = numberToWordsHelper(num % 1000) + bigString[i] + " " + result;
-            }
-            num /= 1000;
-        }
+        for (auto it : mp) {
+            if (num >= it.first) {
+                string a = "";
+                if (num >= 100) {
+                    a = numberToWords(num / it.first) + " ";
+                }
+                string b = it.second;
+                string c = "";
+                if (num % it.first != 0) {
+                    c = " " + numberToWords(num % it.first);
+                }
 
-        return result.empty() ? result : result.substr(0, result.size() - 1); // Trim trailing space
-    }
-
-    string numberToWordsHelper(int num) {
-        string digitString[] = {"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
-        string teenString[] = {"Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
-        string tenString[] = {"", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
-
-        string result = "";
-        if (num > 99) {
-            result += digitString[num / 100] + " Hundred ";
-        }
-        num %= 100;
-        if (num < 20 && num > 9) {
-            result += teenString[num - 10] + " ";
-        } else {
-            if (num >= 20) {
-                result += tenString[num / 10] + " ";
-            }
-            num %= 10;
-            if (num > 0) {
-                result += digitString[num] + " ";
+                return a + b + c;
             }
         }
-        
-        return result;
+        return "";
     }
 };
