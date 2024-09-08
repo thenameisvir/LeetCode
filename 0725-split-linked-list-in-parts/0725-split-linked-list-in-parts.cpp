@@ -11,53 +11,50 @@
 class Solution {
 public:
     vector<ListNode*> splitListToParts(ListNode* head, int k) {
-        vector<ListNode*> ans(k);
-
-        // get total size of linked list
-        int size = 0;
-        ListNode* current = head;
-        while (current != nullptr) {
-            size++;
-            current = current->next;
+        int n=0;
+        ListNode* temp=head;
+        while(temp)
+        {
+            n++;
+            temp=temp->next;
         }
-
-        // minimum size for the k parts
-        int splitSize = size / k;
-
-        // Remaining nodes after splitting the k parts evenly.
-        // These will be distributed to the first (size % k) nodes
-        int numRemainingParts = size % k;
-
-        current = head;
-        ListNode* prev = current;
-        for (int i = 0; i < k; i++) {
-            // create the i-th part
-            ListNode* newPart = current;
-            // calculate size of i-th part
-            int currentSize = splitSize;
-            if (numRemainingParts > 0) {
-                numRemainingParts--;
-                currentSize++;
+        vector<ListNode*>ans(k,NULL);
+        int idx=0;
+        if(n<k)
+        {
+            while(head)
+            {
+                ans[idx++]=head;
+                ListNode* next=head->next;
+                head->next=NULL;
+                head=next;
             }
-
-            // traverse to end of new part
-            int j = 0;
-            while (j < currentSize) {
-                prev = current;
-                if (current != nullptr) {
-                    current = current->next;
-                }
-                j++;
-            }
-
-            // cut off the rest of linked list
-            if (prev != nullptr) {
-                prev->next = nullptr;
-            }
-
-            ans[i] = newPart;
+            return ans;
         }
-
+        int extra=n%k;
+        while(head)
+        {
+            ans[idx++]=head;
+            if(extra>0)
+            {
+                for(int i=0;i<n/k;i++)
+                    head=head->next;
+                ListNode* next=head->next;
+                head->next=NULL;
+                head=next;
+                extra--;
+            }
+            else
+            {
+                for(int i=1;i<n/k;i++)
+                    head=head->next;
+                ListNode* next=head->next;
+                head->next=NULL;
+                head=next;
+            }
+        }
         return ans;
+        
+        
     }
 };
