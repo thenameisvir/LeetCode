@@ -1,7 +1,6 @@
 class Solution {
 public:
-
-    bool kminusone(char&ch,string&ans,int k_1){
+    bool check(char&ch,string&ans,int k_1){
         int it = ans.length()-1;
         for(int i=0;i<k_1;i++){
             if(ans[it]!=ch) return false;
@@ -17,7 +16,7 @@ public:
                 ans.push_back(ch);
             }
             else{
-                if(kminusone(ch,ans,k-1)){
+                if(check(ch,ans,k-1)){
                     for(int i=0;i<k-1;i++){
                         ans.pop_back();
                     }
