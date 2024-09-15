@@ -7,6 +7,6 @@ public:
             a=b;
             b=c;
         }
-        return c;
+        return b;
     }
 };
