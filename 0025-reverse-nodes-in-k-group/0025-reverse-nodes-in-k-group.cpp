@@ -10,7 +10,7 @@
  */
 class Solution {
 public:
-    int getLength(ListNode* &head){
+    int getLength(ListNode* head){
         int len = 0;
         ListNode* temp = head;
         while(temp!=NULL){
@@ -24,12 +24,9 @@ public:
         if(head==NULL){
             return head;
         }
-        if(head->next==NULL){
+        if(head->next == NULL){
             return head;
         }
-
-
-        // 1 case mai solve karunga baki recursion karega 
 
         ListNode* curr = head;
         ListNode* prev = NULL;
@@ -42,21 +39,20 @@ public:
         }
 
         while(pos<k){
+            pos++;
             temp = curr->next;
             curr->next = prev;
             prev = curr;
             curr = temp;
-            pos++;
         }
 
         ListNode* recursionkaAns = NULL;
-
         if(temp!=NULL){
             recursionkaAns = reverseKGroup(temp,k);
             head->next = recursionkaAns;
         }
 
+
         return prev;
-        
     }
 };
