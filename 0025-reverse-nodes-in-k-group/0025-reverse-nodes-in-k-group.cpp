@@ -1,41 +1,62 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
 public:
+    int getLength(ListNode* &head){
+        int len = 0;
+        ListNode* temp = head;
+        while(temp!=NULL){
+            len++;
+            temp = temp->next;
+        }
+
+        return len;
+    }
     ListNode* reverseKGroup(ListNode* head, int k) {
-        if (head == NULL) {
+        if(head==NULL){
             return head;
         }
+        if(head->next==NULL){
+            return head;
+        }
+
+
+        // 1 case mai solve karunga baki recursion karega 
 
         ListNode* curr = head;
         ListNode* prev = NULL;
         ListNode* temp = NULL;
+        int pos = 0;
 
-        // First, check if there are at least k nodes left to reverse
-        int count = 0;
-        curr = head;
-        while (count < k && curr != NULL) {
-            curr = curr->next;
-            count++;
-        }
-        if (count < k) {
-            return head; // Not enough nodes to reverse, return as is
+        int l = getLength(head);
+        if(l<k){
+            return head;
         }
 
-        // Reverse k nodes
-        curr = head;
-        count = 0;
-        while (count < k) {
+        while(pos<k){
             temp = curr->next;
             curr->next = prev;
             prev = curr;
             curr = temp;
-            count++;
+            pos++;
         }
 
-        // Recursively reverse the remaining nodes, and connect the reversed part
-        if (temp != NULL) {
-            head->next = reverseKGroup(temp, k);
+        ListNode* recursionkaAns = NULL;
+
+        if(temp!=NULL){
+            recursionkaAns = reverseKGroup(temp,k);
+            head->next = recursionkaAns;
         }
 
-        return prev; // prev is now the new head of the reversed group
+        return prev;
+        
     }
 };
