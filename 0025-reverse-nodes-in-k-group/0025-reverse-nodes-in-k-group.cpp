@@ -20,17 +20,15 @@ public:
 
         return len;
     }
+    
     ListNode* reverseKGroup(ListNode* head, int k) {
-        if(head==NULL){
-            return head;
-        }
-        if(head->next == NULL){
-            return head;
-        }
 
+        if(head==NULL) return head;
+        if(head->next==NULL) return head;
+
+        ListNode* temp = NULL;
         ListNode* curr = head;
         ListNode* prev = NULL;
-        ListNode* temp = NULL;
         int pos = 0;
 
         int l = getLength(head);
@@ -46,13 +44,15 @@ public:
             curr = temp;
         }
 
+
         ListNode* recursionkaAns = NULL;
         if(temp!=NULL){
             recursionkaAns = reverseKGroup(temp,k);
+
             head->next = recursionkaAns;
         }
 
-
         return prev;
+
     }
 };
