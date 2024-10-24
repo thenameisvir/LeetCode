@@ -11,34 +11,59 @@
 class Solution {
 public:
     vector<int> nodesBetweenCriticalPoints(ListNode* head) {
-        vector<int> criticalPoints;
-        ListNode* prev = nullptr;
-        ListNode* curr = head;
-        int position = 0;
-        
-        while (curr != nullptr && curr->next != nullptr) {
-            if (prev != nullptr && curr->next != nullptr) {
-                if ((curr->val > prev->val && curr->val > curr->next->val) || 
-                    (curr->val < prev->val && curr->val < curr->next->val)) {
-                    criticalPoints.push_back(position);
-                }
-            }
-            prev = curr;
-            curr = curr->next;
-            position++;
-        }
-        
-        if (criticalPoints.size() < 2) {
-            return {-1, -1};
-        }
-        
+        vector<int>ans = {-1,-1}; // It is storing min distance && max distance
+
+        ListNode* prev = head;
+        if(!prev) return ans;
+
+        ListNode* curr = head->next;
+        if(!curr) return ans;
+
+        ListNode* nxt = head->next->next;
+        if(!nxt) return ans;
+
+
+        // Main logic starts
+
+        int firstCP = -1;
+        int lastCP = -1;
+        int i = 1;
         int minDistance = INT_MAX;
-        int maxDistance = criticalPoints.back() - criticalPoints.front();
-        
-        for (int i = 1; i < criticalPoints.size(); i++) {
-            minDistance = min(minDistance, criticalPoints[i] - criticalPoints[i - 1]);
+
+
+        while(nxt){
+            bool isCP = ((curr->val>prev->val && curr->val>nxt->val) || 
+                        (curr->val<prev->val && curr->val<nxt->val)) ? true : false;
+
+            // for first critical point
+            if(isCP && firstCP == -1){
+                firstCP = i;
+                lastCP = i;
+            }
+            else if(isCP){
+                minDistance = min(minDistance,i-lastCP);
+                lastCP = i;
+            }
+
+            i++;
+            prev = prev->next;
+            curr = curr->next;
+            nxt = nxt->next;
+
+
         }
-        
-        return {minDistance, maxDistance};
+
+
+        if(firstCP == lastCP){
+            return ans;
+        }
+        else{
+            ans[0] = minDistance;
+            ans[1] = lastCP-firstCP;
+        }
+
+
+        return ans;
+
     }
 };
