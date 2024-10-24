@@ -11,17 +11,18 @@
 class Solution {
 public:
     ListNode* mergeNodes(ListNode* head) {
+        // basic condition
         if(!head) return head;
 
-        ListNode* slow  = head;
+        // Initialisation
+        ListNode* slow = head;
         ListNode* fast = head->next;
         ListNode* lastNode = NULL;
-
         int sum = 0;
+        // Main Logic
         while(fast){
             if(fast->val!=0){
                 sum+=fast->val;
-
             }
             else{
                 slow->val = sum;
@@ -32,11 +33,7 @@ public:
             fast = fast->next;
         }
 
-
-        // ListNode* temp = lastNode->next;
         lastNode->next = NULL;
-        // delete temp;
-
         return head;
     }
 };
