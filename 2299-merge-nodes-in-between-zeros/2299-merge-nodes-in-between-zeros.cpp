@@ -11,39 +11,32 @@
 class Solution {
 public:
     ListNode* mergeNodes(ListNode* head) {
-        // ListNode* dummy = new ListNode(); // dummy node for the new list
-        // ListNode* temp2 = dummy;
-        // ListNode* temp = head->next; // skip the initial zero node
-        // int sum = 0;
-        
-        // while (temp != nullptr) {
-        //     if (temp->val != 0) {
-        //         sum += temp->val;
-        //     } else {
-        //         temp2->next = new ListNode(sum);
-        //         temp2 = temp2->next;
-        //         sum = 0;
-        //     }
-        //     temp = temp->next;
-        // }
-        
-        // return dummy->next; // return the head of the new list
+        if(!head) return head;
 
-         ListNode* head2 = new ListNode();
-        ListNode* temp2 = head2;
-        ListNode* temp = head->next;
+        ListNode* slow  = head;
+        ListNode* fast = head->next;
+        ListNode* lastNode = NULL;
+
         int sum = 0;
-        while(temp!=nullptr){
-            if(temp->val!=0){
-                sum+=temp->val;
+        while(fast){
+            if(fast->val!=0){
+                sum+=fast->val;
+
             }
             else{
-                temp2->next = new ListNode(sum);
-                temp2 = temp2->next;
+                slow->val = sum;
+                lastNode = slow;
+                slow = slow->next;
                 sum = 0;
             }
-            temp = temp->next;
+            fast = fast->next;
         }
-        return head2->next;
+
+
+        // ListNode* temp = lastNode->next;
+        lastNode->next = NULL;
+        // delete temp;
+
+        return head;
     }
 };
