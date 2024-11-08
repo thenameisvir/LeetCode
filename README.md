@@ -377,6 +377,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0020-valid-parentheses](https://github.com/thenameisvir/LeetCode/tree/master/0020-valid-parentheses) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/thenameisvir/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0058-length-of-last-word](https://github.com/thenameisvir/LeetCode/tree/master/0058-length-of-last-word) |
+| [0071-simplify-path](https://github.com/thenameisvir/LeetCode/tree/master/0071-simplify-path) |
 | [0125-valid-palindrome](https://github.com/thenameisvir/LeetCode/tree/master/0125-valid-palindrome) |
 | [0179-largest-number](https://github.com/thenameisvir/LeetCode/tree/master/0179-largest-number) |
 | [0205-isomorphic-strings](https://github.com/thenameisvir/LeetCode/tree/master/0205-isomorphic-strings) |
@@ -425,6 +426,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/thenameisvir/LeetCode/tree/master/0020-valid-parentheses) |
+| [0071-simplify-path](https://github.com/thenameisvir/LeetCode/tree/master/0071-simplify-path) |
 | [0084-largest-rectangle-in-histogram](https://github.com/thenameisvir/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0145-binary-tree-postorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0155-min-stack](https://github.com/thenameisvir/LeetCode/tree/master/0155-min-stack) |
