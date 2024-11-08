@@ -3,25 +3,52 @@ public:
     vector<int> asteroidCollision(vector<int>& arr) {
         stack<int> st;
 
-        for (int i = 0; i < arr.size(); i++) {
+        // for (int i = 0; i < arr.size(); i++) {
+        //     int curr = arr[i];
+        //     bool destroyed = false;
+
+        //     // Check for collision only if `curr` is negative
+        //     while (!st.empty() && curr < 0 && st.top() > 0) {
+        //         if (abs(curr) > st.top()) {
+        //             st.pop();
+        //         } else if (abs(curr) == st.top()) {
+        //             st.pop();
+        //             destroyed = true;
+        //             break;
+        //         } else {
+        //             destroyed = true;
+        //             break;
+        //         }
+        //     }
+
+        //     if (!destroyed) {
+        //         st.push(curr);
+        //     }
+        // }
+
+
+        for(int i=0;i<arr.size();i++){
             int curr = arr[i];
+
             bool destroyed = false;
 
-            // Check for collision only if `curr` is negative
-            while (!st.empty() && curr < 0 && st.top() > 0) {
-                if (abs(curr) > st.top()) {
+            while(!st.empty() && curr<0 && st.top()>0){
+                if(abs(curr)>st.top()){
                     st.pop();
-                } else if (abs(curr) == st.top()) {
+                }
+                else if(abs(curr)==st.top()){
                     st.pop();
                     destroyed = true;
                     break;
-                } else {
+                }
+                else{
                     destroyed = true;
                     break;
                 }
             }
 
-            if (!destroyed) {
+
+            if(!destroyed){
                 st.push(curr);
             }
         }
