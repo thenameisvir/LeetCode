@@ -1,10 +1,10 @@
 class Solution {
 public:
-    vector<int>nextSmaller(vector<int>&arr){
+    vector<int>nextSmaller(vector<int>&arr)
+    {
         vector<int>ans(arr.size());
 
         stack<int>st;
-
         st.push(-1);
 
         for(int i=arr.size()-1;i>=0;i--){
@@ -18,15 +18,13 @@ public:
             st.push(i);
         }
 
-
         return ans;
-
     }
-    vector<int>prevSmaller(vector<int>&arr){
+    vector<int>prevSmaller(vector<int>&arr)
+    {
         vector<int>ans(arr.size());
 
         stack<int>st;
-
         st.push(-1);
 
         for(int i=0;i<arr.size();i++){
@@ -53,20 +51,16 @@ public:
 
         vector<int>prev = prevSmaller(heights);
 
-
         int maxArea = INT_MIN;
 
         for(int i=0;i<heights.size();i++){
             int length = heights[i];
-
             int width = next[i]-prev[i]-1;
-
 
             int area = length*width;
 
-            maxArea = max(maxArea,area);
+            maxArea = max(area,maxArea);
         }
-
 
         return maxArea;
     }
