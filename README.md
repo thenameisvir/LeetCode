@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/thenameisvir/LeetCode/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/thenameisvir/LeetCode/tree/master/0198-house-robber) |
 | [0215-kth-largest-element-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
+| [0239-sliding-window-maximum](https://github.com/thenameisvir/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0287-find-the-duplicate-number](https://github.com/thenameisvir/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/thenameisvir/LeetCode/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0322-coin-change](https://github.com/thenameisvir/LeetCode/tree/master/0322-coin-change) |
@@ -185,6 +186,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
+| [0239-sliding-window-maximum](https://github.com/thenameisvir/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0264-ugly-number-ii](https://github.com/thenameisvir/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0658-find-k-closest-elements](https://github.com/thenameisvir/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/thenameisvir/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -373,6 +375,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Queue
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/thenameisvir/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/thenameisvir/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## String
 |  |
@@ -498,6 +501,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sliding Window
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/thenameisvir/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0643-maximum-average-subarray-i](https://github.com/thenameisvir/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 | [0658-find-k-closest-elements](https://github.com/thenameisvir/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/thenameisvir/LeetCode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
@@ -654,4 +658,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/thenameisvir/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/thenameisvir/LeetCode/tree/master/0883-car-fleet) |
 | [1072-next-greater-node-in-linked-list](https://github.com/thenameisvir/LeetCode/tree/master/1072-next-greater-node-in-linked-list) |
+## Monotonic Queue
+|  |
+| ------- |
+| [0239-sliding-window-maximum](https://github.com/thenameisvir/LeetCode/tree/master/0239-sliding-window-maximum) |
 <!---LeetCode Topics End-->
