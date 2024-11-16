@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& arr, int k) {
-        deque<int> q; // Deque to store indices for maximum elements
+        deque<int> q; // Deque to store indices
         vector<int> v; // Result vector
 
         // Process the first window
@@ -10,17 +10,17 @@ public:
             while (!q.empty() && arr[q.back()] <= arr[i]) {
                 q.pop_back();
             }
-            q.push_back(i); // Add current index
+            q.push_back(i); // Add the current index
         }
 
-        // Add the maximum of the first window
+        // Push the maximum of the first window
         v.push_back(arr[q.front()]);
 
-        // Process the remaining windows
+        // Process the rest of the array
         for (int i = k; i < arr.size(); i++) {
-            // Remove indices that are out of the current window
+            // Remove elements out of the current window
             if (!q.empty() && q.front() <= i - k) {
-                q.pop_front();
+                q.pop_front(); // Remove the front element
             }
 
             // Remove all smaller elements from the back of the deque
@@ -28,10 +28,9 @@ public:
                 q.pop_back();
             }
 
-            // Add the current index
-            q.push_back(i);
+            q.push_back(i); // Add the current index
 
-            // Add the maximum of the current window
+            // Push the maximum of the current window
             v.push_back(arr[q.front()]);
         }
 
