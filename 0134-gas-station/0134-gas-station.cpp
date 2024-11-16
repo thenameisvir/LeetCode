@@ -1,30 +1,33 @@
 class Solution {
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
-        int current = 0;
-        int totalfuel = 0;
-        int totalcost = 0;
-        int diff = 0;
+        // bhot important hai bhula mt kar bkl
+        // ye wali approach achi hai isko bhulna mt 
+
+
+        int deficit = 0;
+        int balance = 0;
         int start = 0;
+
         for(int i=0;i<gas.size();i++){
-            totalfuel+=gas[i];
+            balance = balance + gas[i] - cost[i];
+
+            if(balance<0){
+                deficit+=abs(balance);
+                start=i+1;
+                balance = 0;
+            }
         }
-        for(int i=0;i<gas.size();i++){
-            totalcost+=cost[i];
+
+        if(balance-deficit>=0){
+            return start;
         }
-        if(totalfuel<totalcost){
+        else{
             return -1;
         }
 
-        for(int i=0;i<gas.size();i++){
-            current+=(gas[i]-cost[i]);
-            if(current<0){
-                start = i+1;
-                current = 0;
+        
 
-            }
-        }
-        return start;
 
     }
 };
