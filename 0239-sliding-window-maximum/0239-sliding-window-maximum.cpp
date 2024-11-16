@@ -6,7 +6,7 @@ public:
 
         // Process the first window
         for (int i = 0; i < k; i++) {
-            // Remove all smaller elements from the back of the deque
+            // Remove all smaller elements from the back of the deque in the same loop
             while (!q.empty() && arr[q.back()] <= arr[i]) {
                 q.pop_back();
             }
