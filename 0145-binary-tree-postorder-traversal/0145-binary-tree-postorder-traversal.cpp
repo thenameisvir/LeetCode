@@ -1,23 +1,19 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
 class Solution {
 public:
-    vector<int> num={};
     vector<int> postorderTraversal(TreeNode* root) {
-        if (root==nullptr)
-            return num;
-        postorderTraversal(root->left);
-        postorderTraversal(root->right);
-        num.push_back(root->val);
-        return num;
+        vector<int> v; // To store the result
+        postorderHelper(root, v); // Call helper function
+        return v; // Return the result
+    }
+
+private:
+    void postorderHelper(TreeNode* root, vector<int>& v) {
+        if (root == NULL) {
+            return; // Base case
+        }
+
+        postorderHelper(root->left, v);  // Traverse left subtree
+        postorderHelper(root->right, v); // Traverse right subtree
+        v.push_back(root->val);          // Add current node value
     }
 };
