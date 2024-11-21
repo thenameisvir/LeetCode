@@ -18,12 +18,12 @@ public:
             return 0;
         }
 
-        int left = maxDepth(root->left);
+        int left = 1+ maxDepth(root->left);
 
-        int right = maxDepth(root->right);
+        int right = 1 + maxDepth(root->right);
 
 
-        int height  = max(left,right) + 1;
+        int height  = max(left,right);
 
         return height;
 
