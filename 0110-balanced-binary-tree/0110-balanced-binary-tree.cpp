@@ -37,7 +37,7 @@ public:
 
         bool ans =  (diff<=1);
 
-        if(!ans) return false;
+        // if(!ans) return false;
 
         bool ans1 = isBalanced(root->left);
         bool ans2 = isBalanced(root->right);
