@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void solve(TreeNode* root, int targetSum, vector<vector<int>>& ans, vector<int>& temp, int sum) {
+    void solve(TreeNode* root, int targetSum, vector<vector<int>>& ans, vector<int> temp, int sum) {
         if (root == NULL) return;
 
         // Add current node value to sum and path
@@ -19,7 +19,7 @@ public:
         }
 
         // Backtrack: remove the current node from the path
-        temp.pop_back();
+        // temp.pop_back();
     }
 
     vector<vector<int>> pathSum(TreeNode* root, int targetSum) {
