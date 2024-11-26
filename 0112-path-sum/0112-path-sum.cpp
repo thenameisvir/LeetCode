@@ -11,18 +11,23 @@
  */
 class Solution {
 public:
-    bool hasPathSum(TreeNode* root, int targetSum) {
-// my first case for the path sum is , if i have tackeled the null node then
+    bool solve(TreeNode* root, int targetSum,int sum){
         if(root==NULL) return false;
-// my second case if for the leaf node because then i have to check the conditions
-        if(root->left==NULL && root->right==NULL) return targetSum==root->val;
+// if(root->left==NULL && root->right==NULL) return sum==targetSum;
+        if (root->left == NULL && root->right == NULL) return (sum + root->val) == targetSum;
+        
 
 
-        // now the recursion conditions
-        bool ans1 = hasPathSum(root->left,targetSum-root->val);
-        bool ans2 = hasPathSum(root->right,targetSum-root->val);
+        bool ans1 = solve(root->left,targetSum,sum + root->val);
+        bool ans2 = solve(root->right,targetSum,sum + root->val);
 
 
         return ans1||ans2;
+    }
+    bool hasPathSum(TreeNode* root, int targetSum) {
+        int sum = 0;
+        bool ans = solve(root,targetSum,sum);
+
+        return ans;
     }
 };
