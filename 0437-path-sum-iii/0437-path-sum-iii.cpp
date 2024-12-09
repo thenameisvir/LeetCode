@@ -1,32 +1,37 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
 class Solution {
 public:
-    int ansSum(TreeNode* root, long long targetSum) {
-        if (!root) return 0;
+    int ans = 0;
+    void ansSum(TreeNode* root, long long sum){
+        if(!root) return;
 
-        int count = 0;
-
-        // Check if current node completes a path
-        if (root->val == targetSum) {
-            count = 1;
+        if(sum==root->val){
+            ans++;
         }
 
-        // Continue checking in left and right subtrees
-        count += ansSum(root->left, targetSum - root->val);
-        count += ansSum(root->right, targetSum - root->val);
+        ansSum(root->left,sum-root->val);
+        ansSum(root->right,sum-root->val);
 
-        return count;
     }
+    int pathSum(TreeNode* root, long long targetSum) {
+        
+        if(root){
 
-    int pathSum(TreeNode* root, int targetSum) {
-        if (!root) return 0;
+            ansSum(root,targetSum);
+            pathSum(root->left,targetSum);
+            pathSum(root->right,targetSum);
+        }
+        return ans;
 
-        // Count paths starting from the current node
-        int count = ansSum(root, targetSum);
-
-        // Count paths in left and right subtrees
-        count += pathSum(root->left, targetSum);
-        count += pathSum(root->right, targetSum);
-
-        return count;
     }
 };
