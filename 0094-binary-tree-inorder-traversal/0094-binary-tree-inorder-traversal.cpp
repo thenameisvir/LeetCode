@@ -1,19 +1,34 @@
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        vector<int> v;  // To store the result
-        inorderHelper(root, v);  // Call helper function
-        return v;  // Return the result
-    }
+        vector<int> ans;
+        TreeNode* curr = root;
 
-private:
-    void inorderHelper(TreeNode* root, vector<int>& v) {
-        if (root == NULL) {
-            return;  // Base case
+        while (curr) {
+            if (curr->left == NULL) {
+                ans.push_back(curr->val);
+                curr = curr->right;
+            } else {
+                TreeNode* pred = curr->left;
+
+                // Find the rightmost node in the left subtree or stop if it already points to curr
+                while (pred->right && pred->right != curr) {
+                    pred = pred->right;
+                }
+
+                if (pred->right == NULL) {
+                    // Establish the thread and move to the left child
+                    pred->right = curr;
+                    curr = curr->left;
+                } else {
+                    // Remove the thread, process the current node, and move to the right child
+                    pred->right = NULL;
+                    ans.push_back(curr->val);
+                    curr = curr->right;
+                }
+            }
         }
 
-        inorderHelper(root->left, v);  // Traverse left subtree
-        v.push_back(root->val);        // Add current node value
-        inorderHelper(root->right, v); // Traverse right subtree
+        return ans;
     }
 };
