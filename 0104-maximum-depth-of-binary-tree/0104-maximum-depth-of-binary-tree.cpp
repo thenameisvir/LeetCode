@@ -23,9 +23,7 @@ public:
         int righti = 1 + maxDepth(root->right);
 
 
-        int height  = max(lefti,righti);
-
-        return height;
+        return max(lefti,righti);
 
     }
 };
