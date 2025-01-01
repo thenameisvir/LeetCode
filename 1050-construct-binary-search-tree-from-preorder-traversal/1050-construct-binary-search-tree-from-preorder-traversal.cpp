@@ -16,9 +16,9 @@ public:
 
     TreeNode* bstFromPreorder(vector<int>& preorder) {
         TreeNode* root = nullptr;
-        for (int num : preorder) {
-            root = buildTree(root, num);
-        }
+        for (int i = 0; i < preorder.size(); i++) {
+        root = buildTree(root, preorder[i]);
+    }
 
         return root;
     }
