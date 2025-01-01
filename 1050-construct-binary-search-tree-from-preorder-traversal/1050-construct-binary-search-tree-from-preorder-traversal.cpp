@@ -2,7 +2,8 @@ class Solution {
 public:
     TreeNode* buildTree(TreeNode* root, int num) {
         if (!root) {
-            return new TreeNode(num);
+            TreeNode* root = new TreeNode(num);
+    return root;
         }
 
         if (num > root->val) {
