@@ -187,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/thenameisvir/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0890-lemonade-change](https://github.com/thenameisvir/LeetCode/tree/master/0890-lemonade-change) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/thenameisvir/LeetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+| [1285-balance-a-binary-search-tree](https://github.com/thenameisvir/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/thenameisvir/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/thenameisvir/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/thenameisvir/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
@@ -301,6 +302,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/thenameisvir/LeetCode/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0948-sort-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0948-sort-an-array) |
+| [1285-balance-a-binary-search-tree](https://github.com/thenameisvir/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 ## Quickselect
 |  |
 | ------- |
@@ -569,6 +571,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/thenameisvir/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1207-delete-nodes-and-return-forest](https://github.com/thenameisvir/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
+| [1285-balance-a-binary-search-tree](https://github.com/thenameisvir/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/thenameisvir/LeetCode/tree/master/1484-linked-list-in-binary-tree) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/thenameisvir/LeetCode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 ## Depth-First Search
@@ -597,6 +600,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0999-regions-cut-by-slashes](https://github.com/thenameisvir/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/thenameisvir/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/thenameisvir/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
+| [1285-balance-a-binary-search-tree](https://github.com/thenameisvir/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/thenameisvir/LeetCode/tree/master/1484-linked-list-in-binary-tree) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/thenameisvir/LeetCode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/thenameisvir/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
@@ -632,6 +636,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/thenameisvir/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1207-delete-nodes-and-return-forest](https://github.com/thenameisvir/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
+| [1285-balance-a-binary-search-tree](https://github.com/thenameisvir/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/thenameisvir/LeetCode/tree/master/1484-linked-list-in-binary-tree) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/thenameisvir/LeetCode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 ## Merge Sort
@@ -726,6 +731,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0783-search-in-a-binary-search-tree](https://github.com/thenameisvir/LeetCode/tree/master/0783-search-in-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/thenameisvir/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
+| [1285-balance-a-binary-search-tree](https://github.com/thenameisvir/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 ## Data Stream
 |  |
 | ------- |
