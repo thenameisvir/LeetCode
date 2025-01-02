@@ -11,45 +11,39 @@
  */
 class Solution {
 public:
-    vector<int> arr;
-    inline void inOrder(TreeNode* root){
-        vector<TreeNode*> stack;
-        TreeNode* node=root;
-        while (node || !stack.empty()){
-            while(node){
-                stack.push_back(node);
-                node=node->left;
-            }
-            node=stack.back();
-            stack.pop_back();
-            
-            arr.push_back(node->val);
-
-            node=node->right;
+    void BuildIt(TreeNode* root,vector<int>&v){
+        if(!root){
+            return;
         }
-    }
 
-    TreeNode* balanceBST(int l, int r){
-        if (l>r) return NULL;
-        const int m=(l+r)/2;
-        TreeNode* left=(l>m-1)?NULL:balanceBST(l, m-1);
-        TreeNode* right=(m+1>r)?NULL:balanceBST(m+1, r);
-        return new TreeNode(arr[m], left, right);
+        BuildIt(root->left,v);
+        v.push_back(root->val);
+        BuildIt(root->right,v);
     }
+    TreeNode* solve(TreeNode* &moot,vector<int>v,int s,int e){
+        if(s>e) return NULL;
 
+        int m = s+(e-s)/2;
+
+        TreeNode* root = new TreeNode(v[m]);
+
+        root->left = solve(moot,v,s,m-1);
+        root->right = solve(moot,v,m+1,e);
+
+        return root;
+
+    }
     TreeNode* balanceBST(TreeNode* root) {
-        inOrder(root);
-        return balanceBST(0, arr.size()-1);
+        vector<int>v;
+        BuildIt(root,v);
+        TreeNode* moot = NULL;
+
+        int s = 0;
+        int e = v.size()-1;
+    
+        moot = solve(moot,v,s,e);
+        return moot;
+
+
     }
 };
-
-
-
-
-
-auto init = []() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-    return 'c';
-}();
