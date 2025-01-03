@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1072-next-greater-node-in-linked-list](https://github.com/thenameisvir/LeetCode/tree/master/1072-next-greater-node-in-linked-list) |
 | [1196-filling-bookcase-shelves](https://github.com/thenameisvir/LeetCode/tree/master/1196-filling-bookcase-shelves) |
 | [1207-delete-nodes-and-return-forest](https://github.com/thenameisvir/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
+| [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/thenameisvir/LeetCode/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 | [1240-stone-game-ii](https://github.com/thenameisvir/LeetCode/tree/master/1240-stone-game-ii) |
 | [1293-three-consecutive-odds](https://github.com/thenameisvir/LeetCode/tree/master/1293-three-consecutive-odds) |
 | [1325-path-with-maximum-probability](https://github.com/thenameisvir/LeetCode/tree/master/1325-path-with-maximum-probability) |
