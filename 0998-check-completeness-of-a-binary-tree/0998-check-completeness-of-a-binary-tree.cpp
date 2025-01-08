@@ -11,47 +11,30 @@
  */
 class Solution {
 public:
-    int LastNode = 0;
-    int TotalNode = 0;
-
-    void count(TreeNode* root) {
-        if (!root) {
-            return;
-        }
-        TotalNode++;
-        count(root->left);
-        count(root->right);
-    }
-
-    void countLast(TreeNode* root) {
-        queue<TreeNode*> q;
+    bool isCompleteTree(TreeNode* root) {
+        queue<TreeNode*>q;
         q.push(root);
-
-        while (!q.empty()) {
+        bool flag = true;
+        while(!q.empty()){
             TreeNode* current = q.front();
-            q.pop();
-
-            if (current) {
-                LastNode++;
+            
+            if(current){
                 q.push(current->left);
                 q.push(current->right);
-            } else {
-                // If a NULL is encountered, remaining nodes should all be NULL
-                while (!q.empty()) {
-                    if (q.front() != nullptr) {
-                        return;
+                q.pop();
+            }
+            else{
+                while(!q.empty()){
+                    if(q.front()!=NULL){
+                        flag = false;
+                        break;
                     }
                     q.pop();
                 }
-                break;
             }
+
         }
-    }
 
-    bool isCompleteTree(TreeNode* root) {
-        count(root);
-        countLast(root);
-
-        return (LastNode == TotalNode);
+        return flag;
     }
 };
