@@ -89,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/thenameisvir/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/thenameisvir/LeetCode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/thenameisvir/LeetCode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
+| [2292-counting-words-with-a-given-prefix](https://github.com/thenameisvir/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2411-spiral-matrix-iv](https://github.com/thenameisvir/LeetCode/tree/master/2411-spiral-matrix-iv) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/thenameisvir/LeetCode/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2472-build-a-matrix-with-conditions](https://github.com/thenameisvir/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
@@ -454,6 +455,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/thenameisvir/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2235-capitalize-the-title](https://github.com/thenameisvir/LeetCode/tree/master/2235-capitalize-the-title) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/thenameisvir/LeetCode/tree/master/2244-number-of-laser-beams-in-a-bank) |
+| [2292-counting-words-with-a-given-prefix](https://github.com/thenameisvir/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2406-decode-the-message](https://github.com/thenameisvir/LeetCode/tree/master/2406-decode-the-message) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/thenameisvir/LeetCode/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/thenameisvir/LeetCode/tree/master/2494-sum-of-prefix-scores-of-strings) |
@@ -764,6 +766,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/thenameisvir/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0214-shortest-palindrome](https://github.com/thenameisvir/LeetCode/tree/master/0214-shortest-palindrome) |
+| [2292-counting-words-with-a-given-prefix](https://github.com/thenameisvir/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 ## Number Theory
 |  |
 | ------- |
