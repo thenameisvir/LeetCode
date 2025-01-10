@@ -1,24 +1,33 @@
 class Solution {
 public:
-    int minStoneSum(vector<int>& piles, int k) {
-        priority_queue<int>pq;
-        for(int i=0;i<piles.size();i++){
-            int element = piles[i];
-            pq.push(element);
-        }
-        while(k--){
-            int tope = pq.top();
-            pq.pop();
-            tope = tope-(tope/2);
-            pq.push(tope);
+    int minStoneSum(vector<int>& arr, int k) {
+        priority_queue<int> pq;
+        
+        // Push all elements into the max heap
+        for (int i = 0; i < arr.size(); i++) {
+            pq.push(arr[i]);
         }
 
-        int sum = 0;
-        while(!pq.empty()){
-            int e = pq.top();
+        while (k > 0 && !pq.empty()) {
+            int element = pq.top(); // Get the largest element
             pq.pop();
-            sum+=e;
+            
+            // Remove half of the stones from the largest pile
+            element -= element / 2; 
+            
+            // Push the updated pile back into the heap
+            pq.push(element);
+            k--;
         }
-        return sum;
+
+        int ans = 0;
+
+        // Sum up all remaining stones in the heap
+        while (!pq.empty()) {
+            ans += pq.top();
+            pq.pop();
+        }
+
+        return ans;
     }
 };
