@@ -192,6 +192,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0890-lemonade-change](https://github.com/thenameisvir/LeetCode/tree/master/0890-lemonade-change) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/thenameisvir/LeetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1285-balance-a-binary-search-tree](https://github.com/thenameisvir/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
+| [1304-longest-happy-string](https://github.com/thenameisvir/LeetCode/tree/master/1304-longest-happy-string) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/thenameisvir/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/thenameisvir/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/thenameisvir/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
@@ -207,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/thenameisvir/LeetCode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/thenameisvir/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0948-sort-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0948-sort-an-array) |
+| [1304-longest-happy-string](https://github.com/thenameisvir/LeetCode/tree/master/1304-longest-happy-string) |
 | [1325-path-with-maximum-probability](https://github.com/thenameisvir/LeetCode/tree/master/1325-path-with-maximum-probability) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/thenameisvir/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2803-modify-graph-edge-weights](https://github.com/thenameisvir/LeetCode/tree/master/2803-modify-graph-edge-weights) |
@@ -449,6 +451,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1045-check-if-word-is-valid-after-substitutions](https://github.com/thenameisvir/LeetCode/tree/master/1045-check-if-word-is-valid-after-substitutions) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/thenameisvir/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/thenameisvir/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
+| [1304-longest-happy-string](https://github.com/thenameisvir/LeetCode/tree/master/1304-longest-happy-string) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/thenameisvir/LeetCode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/thenameisvir/LeetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1720-crawler-log-folder](https://github.com/thenameisvir/LeetCode/tree/master/1720-crawler-log-folder) |
