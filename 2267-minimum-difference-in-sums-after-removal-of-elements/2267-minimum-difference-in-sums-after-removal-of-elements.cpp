@@ -42,6 +42,7 @@ public:
             if(pq2.size()==n){
                 suffix[i] = sum;
             }
+            
         }
 
         ll ans = LONG_LONG_MAX;
