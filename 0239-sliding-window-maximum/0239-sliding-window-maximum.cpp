@@ -1,37 +1,38 @@
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& arr, int k) {
-        deque<int> q; // Deque to store indices
-        vector<int> v; // Result vector
+        deque<int>q;
+        vector<int>v;
 
-        // Process the first window
-        for (int i = 0; i < k; i++) {
-            // Remove all smaller elements from the back of the deque in the same loop
-            while (!q.empty() && arr[q.back()] <= arr[i]) {
+        // Vir first window ko access kar
+        for(int i=0;i<k;i++){
+            while(!q.empty() && arr[q.back()]<=arr[i]){
                 q.pop_back();
             }
-            q.push_back(i); // Add the current index
+
+            q.push_back(i);
         }
 
-        // Push the maximum of the first window
+        // yaha tak apan ne window bana li hai almost ab iske front p ans pada hai pehli window ka
+        // usko bhi lage hat push karde
+
         v.push_back(arr[q.front()]);
 
-        // Process the rest of the array
-        for (int i = k; i < arr.size(); i++) {
-            // Remove elements out of the current window
-            if (!q.empty() && q.front() <= i - k) {
-                q.pop_front(); // Remove the front element
+        // now we will be accessing the rest of the window 
+        for(int i=k;i<arr.size();i++){
+            // check kar jo max element hum push kr rhe the kahi vo out of bound to nahi ho gya
+            if(!q.empty() && q.front()<=i-k){
+                q.pop_front();
             }
 
-            // Remove all smaller elements from the back of the deque
-            while (!q.empty() && arr[q.back()] <= arr[i]) {
+            while(!q.empty() && arr[q.back()]<=arr[i]){
                 q.pop_back();
             }
 
-            q.push_back(i); // Add the current index
+            q.push_back(i);
 
-            // Push the maximum of the current window
             v.push_back(arr[q.front()]);
+
         }
 
         return v;
