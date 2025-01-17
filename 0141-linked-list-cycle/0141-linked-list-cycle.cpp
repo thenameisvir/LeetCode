@@ -9,15 +9,30 @@
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-        if(head == nullptr || head->next == nullptr) return false;
-        ListNode* fast = head;
-        ListNode* slow = head;
-        while(fast != nullptr && fast->next != nullptr) {
-            slow = slow->next;
-            fast = fast->next->next;
+        
+        unordered_map<ListNode* , bool>mapping;
 
-            if(slow == fast) return true;
+        // jab bhi kisi linked list pr traverse karo toh humesha temp bana lo
+
+        ListNode* temp = head;
+
+        while(temp){
+            // address check
+            if(mapping.find(temp)!=mapping.end()){
+                return true;
+
+            }
+
+            else{
+                mapping[temp] = true;
+            }
+
+            temp = temp->next;
+
+
         }
+
         return false;
+
     }
 };
