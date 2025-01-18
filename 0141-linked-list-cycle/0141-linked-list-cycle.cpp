@@ -9,30 +9,32 @@
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-        
-        unordered_map<ListNode* , bool>mapping;
+        unordered_map<ListNode* , bool>mp;
 
-        // jab bhi kisi linked list pr traverse karo toh humesha temp bana lo
+        // we know that we have to interate through the secpndary pointer so we have to 
+        // create a temporary pointer over here known as temp
 
         ListNode* temp = head;
 
         while(temp){
-            // address check
-            if(mapping.find(temp)!=mapping.end()){
+            if(mp.find(temp)!=mp.end()){
+                // if the entry is present then return it simply
                 return true;
-
             }
-
             else{
-                mapping[temp] = true;
+                // initialise the entry and mark true infront of it
+                mp[temp] = true;
             }
-
-            temp = temp->next;
-
+// push the temp pointer forward
+        temp = temp->next;
 
         }
 
-        return false;
 
+        return false;
+        
     }
+
+
+    
 };
