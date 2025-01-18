@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1293-three-consecutive-odds](https://github.com/thenameisvir/LeetCode/tree/master/1293-three-consecutive-odds) |
 | [1325-path-with-maximum-probability](https://github.com/thenameisvir/LeetCode/tree/master/1325-path-with-maximum-probability) |
 | [1333-sort-the-jumbled-numbers](https://github.com/thenameisvir/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
+| [1397-search-suggestions-system](https://github.com/thenameisvir/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1435-xor-queries-of-a-subarray](https://github.com/thenameisvir/LeetCode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/thenameisvir/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1511-count-number-of-teams](https://github.com/thenameisvir/LeetCode/tree/master/1511-count-number-of-teams) |
@@ -163,6 +164,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0987-reveal-cards-in-increasing-order](https://github.com/thenameisvir/LeetCode/tree/master/0987-reveal-cards-in-increasing-order) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/thenameisvir/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1333-sort-the-jumbled-numbers](https://github.com/thenameisvir/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
+| [1397-search-suggestions-system](https://github.com/thenameisvir/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/thenameisvir/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/thenameisvir/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/thenameisvir/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
@@ -220,6 +222,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0948-sort-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0948-sort-an-array) |
 | [1304-longest-happy-string](https://github.com/thenameisvir/LeetCode/tree/master/1304-longest-happy-string) |
 | [1325-path-with-maximum-probability](https://github.com/thenameisvir/LeetCode/tree/master/1325-path-with-maximum-probability) |
+| [1397-search-suggestions-system](https://github.com/thenameisvir/LeetCode/tree/master/1397-search-suggestions-system) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/thenameisvir/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/thenameisvir/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2803-modify-graph-edge-weights](https://github.com/thenameisvir/LeetCode/tree/master/2803-modify-graph-edge-weights) |
@@ -282,6 +285,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0719-find-k-th-smallest-pair-distance](https://github.com/thenameisvir/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0729-my-calendar-i](https://github.com/thenameisvir/LeetCode/tree/master/0729-my-calendar-i) |
 | [0792-binary-search](https://github.com/thenameisvir/LeetCode/tree/master/0792-binary-search) |
+| [1397-search-suggestions-system](https://github.com/thenameisvir/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/thenameisvir/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/thenameisvir/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 ## Linked List
@@ -468,6 +472,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/thenameisvir/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1304-longest-happy-string](https://github.com/thenameisvir/LeetCode/tree/master/1304-longest-happy-string) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/thenameisvir/LeetCode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
+| [1397-search-suggestions-system](https://github.com/thenameisvir/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/thenameisvir/LeetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1720-crawler-log-folder](https://github.com/thenameisvir/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/thenameisvir/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
@@ -741,6 +746,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/thenameisvir/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0386-lexicographical-numbers](https://github.com/thenameisvir/LeetCode/tree/master/0386-lexicographical-numbers) |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/thenameisvir/LeetCode/tree/master/0440-k-th-smallest-in-lexicographical-order) |
+| [1397-search-suggestions-system](https://github.com/thenameisvir/LeetCode/tree/master/1397-search-suggestions-system) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/thenameisvir/LeetCode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2755-extra-characters-in-a-string](https://github.com/thenameisvir/LeetCode/tree/master/2755-extra-characters-in-a-string) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/thenameisvir/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
