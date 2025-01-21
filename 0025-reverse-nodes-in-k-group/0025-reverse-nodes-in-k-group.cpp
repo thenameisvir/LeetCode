@@ -1,51 +1,56 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
 public:
-    int getLength(ListNode* head)
-    {
+    int lengthIs(ListNode* head){
         ListNode* temp = head;
-        int len = 0;
-        while(temp!=NULL){
-            len++;
+        int count = 0;
+        while(temp){
+            count++;
             temp = temp->next;
         }
 
-
-        return len;
-
+        return count;
     }
     ListNode* reverseKGroup(ListNode* head, int k) {
-        if(head==NULL) return head;
-        // if(head->next == NULL) return head;
+     // phir agye hum huehuehue
+     if(!head) return head;
+     if(!head->next) return head; // means ki single element hai toh reverse kaise kre
 
-        ListNode* curr = head;
-        ListNode* temp = NULL;
-        ListNode* prev = NULL;
-        int pos = 0;
+     ListNode* curr = head;
+     ListNode* temp = NULL;
+     ListNode* prev = NULL;
 
-        int len = getLength(head);
-        if(len<k){
-            return head;
-        }
+     int pos = 0;
+     if(lengthIs(head)<k) return head;
 
-        // do one task and leave it to recursion
+     while(pos<k){
+        temp = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr = temp;
+        pos++;
+     }
 
-        while(pos<k){
-            pos++;
-            temp = curr->next;
-            curr->next = prev;
-            prev = curr;
-            curr = temp;
-        }
+     // yaha tk maine k reverse krdi hai ab baki ka recursion karega kaam
+     ListNode* recursionKaAns = NULL;
 
-        ListNode* recursionkaAns = NULL;
+     if(temp){
+        recursionKaAns = reverseKGroup(curr,k);
+        // aur dhyan rkho sbse main point , attatch karna mt bhulna
+        head->next = recursionKaAns;
+     }
 
-        if(temp!=NULL){
-            recursionkaAns = reverseKGroup(temp,k);
-            head->next = recursionkaAns;
-        }
-        
-    return prev;
 
+     return prev;
 
     }
 };
