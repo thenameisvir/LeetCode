@@ -1,25 +1,43 @@
 class Solution {
 public:
-    int chori(vector<int>& arr,int prev1,int prev2,int index){
-        if(index>=arr.size()){
-            return prev1;
+    int usingRec(vector<int>& arr,int n){
+        if(n>=arr.size()){
+            return 0;
         }
+        // base case was easy let;s do the processing
+        int inc = arr[n] + usingRec(arr,n+2);
+        int exc = 0 + usingRec(arr,n+1);
 
-        int current = max(arr[index] + prev2,prev1);
-        prev2 = prev1;
-        prev1 = current;
+        // this is based on include exclude principle
 
-        return chori(arr,prev1,prev2,index+1);
+        // now here we return the max value which will go upon the recursive tree
+
+        return max(inc,exc);
 
 
     }
+    int usingDp(vector<int>& arr,int n,vector<int>&dp){
+        if(n>=arr.size()){
+            return 0;
+        }
+
+        // idhar dp me store karenge
+        if(dp[n]!=-1){
+            return dp[n];
+        }
+
+
+        // idhar khudka process karo
+        int inc = arr[n] + usingDp(arr,n+2,dp);
+        int exc = 0 + usingDp(arr,n+1,dp);
+
+        dp[n] = max(inc,exc);
+        return dp[n];
+    }
     int rob(vector<int>& arr) {
-        if(arr.size()==1) return arr[0];
-        if(arr.empty()) return 0;
-        int prev1 = 0;
-        int prev2 = 0;
-        int index = 0;
-        int ans = chori(arr,prev1,prev2,index);
+        vector<int>dp(arr.size(),-1);
+        int ans = usingDp(arr,0,dp);
         return ans;
+        
     }
 };
