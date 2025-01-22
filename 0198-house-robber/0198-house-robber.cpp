@@ -1,27 +1,24 @@
 class Solution {
 public:
-    int solveUsingMemo(vector<int>& arr,int index,vector<int>&dp){
-        if(index>=arr.size()){
-            return 0;
+    int solveUsingTabulation(vector<int>& nums) {
+        int n = nums.size();
+        //step1
+        vector<int> dp(n, -1);
+        //step2
+        dp[n-1] = nums[n-1];
+        for(int index = n-2; index>=0; index--) {
+            int tempAns = 0;
+            if(index + 2 < n) {
+                tempAns = dp[index+2];
+            }
+            int include = nums[index] + tempAns;
+            int exclude = 0 + dp[index+1];
+            dp[index] = max(include, exclude);
         }
-
-        // dp ko process karlo na 
-
-        if(dp[index]!=-1){
-            return dp[index];
-        }
-
-        // ek case solve karo include exclude ka 
-        int inc = arr[index] + solveUsingMemo(arr,index+2,dp);
-        int exc = 0 + solveUsingMemo(arr,index+1,dp);
-
-        dp[index] = max(inc,exc);
-
-        return dp[index];
+        return dp[0];
     }
-    int rob(vector<int>& arr) {
-        vector<int>dp(arr.size(),-1);
-        int ans2 = solveUsingMemo(arr,0,dp);
-        return ans2;
+    int rob(vector<int>& nums) {
+        int ans = solveUsingTabulation(nums);
+        return ans;
     }
 };
