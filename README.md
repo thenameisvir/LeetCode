@@ -401,6 +401,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0241-different-ways-to-add-parentheses](https://github.com/thenameisvir/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/thenameisvir/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0322-coin-change](https://github.com/thenameisvir/LeetCode/tree/master/0322-coin-change) |
+| [0516-longest-palindromic-subsequence](https://github.com/thenameisvir/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
 | [0650-2-keys-keyboard](https://github.com/thenameisvir/LeetCode/tree/master/0650-2-keys-keyboard) |
 | [0664-strange-printer](https://github.com/thenameisvir/LeetCode/tree/master/0664-strange-printer) |
 | [0863-sum-of-distances-in-tree](https://github.com/thenameisvir/LeetCode/tree/master/0863-sum-of-distances-in-tree) |
@@ -468,6 +469,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0394-decode-string](https://github.com/thenameisvir/LeetCode/tree/master/0394-decode-string) |
 | [0415-add-strings](https://github.com/thenameisvir/LeetCode/tree/master/0415-add-strings) |
 | [0443-string-compression](https://github.com/thenameisvir/LeetCode/tree/master/0443-string-compression) |
+| [0516-longest-palindromic-subsequence](https://github.com/thenameisvir/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
 | [0539-minimum-time-difference](https://github.com/thenameisvir/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0564-find-the-closest-palindrome](https://github.com/thenameisvir/LeetCode/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/thenameisvir/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
