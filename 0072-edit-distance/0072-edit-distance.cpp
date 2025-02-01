@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int Memo(string word1, string word2,int i,int j,vector<vector<int>>&dp){
+    int Memo(string &word1, string &word2,int i,int j,vector<vector<int>>&dp){
         // base case baad me dekhenge 
         if(i>=word1.length()){
             return word2.length()-j;
@@ -32,6 +32,9 @@ public:
         dp[i][j] = ans;
         return dp[i][j];
     }
+    // int Tab(){
+
+    // }
     int minDistance(string word1, string word2) {
         vector<vector<int>>dp(word1.length()+1,vector<int>(word2.length()+1,0));
         int ans = Memo(word1,word2,0,0,dp);
