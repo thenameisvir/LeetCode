@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/thenameisvir/LeetCode/tree/master/0179-largest-number) |
 | [0189-rotate-array](https://github.com/thenameisvir/LeetCode/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/thenameisvir/LeetCode/tree/master/0198-house-robber) |
+| [0200-number-of-islands](https://github.com/thenameisvir/LeetCode/tree/master/0200-number-of-islands) |
 | [0215-kth-largest-element-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/thenameisvir/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0287-find-the-duplicate-number](https://github.com/thenameisvir/LeetCode/tree/master/0287-find-the-duplicate-number) |
@@ -179,6 +180,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Union Find
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/thenameisvir/LeetCode/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/thenameisvir/LeetCode/tree/master/0547-number-of-provinces) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/thenameisvir/LeetCode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/thenameisvir/LeetCode/tree/master/0999-regions-cut-by-slashes) |
@@ -586,6 +588,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/thenameisvir/LeetCode/tree/master/0054-spiral-matrix) |
 | [0074-search-a-2d-matrix](https://github.com/thenameisvir/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0085-maximal-rectangle](https://github.com/thenameisvir/LeetCode/tree/master/0085-maximal-rectangle) |
+| [0200-number-of-islands](https://github.com/thenameisvir/LeetCode/tree/master/0200-number-of-islands) |
 | [0870-magic-squares-in-grid](https://github.com/thenameisvir/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/thenameisvir/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [0999-regions-cut-by-slashes](https://github.com/thenameisvir/LeetCode/tree/master/0999-regions-cut-by-slashes) |
@@ -660,6 +663,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0144-binary-tree-preorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/thenameisvir/LeetCode/tree/master/0199-binary-tree-right-side-view) |
+| [0200-number-of-islands](https://github.com/thenameisvir/LeetCode/tree/master/0200-number-of-islands) |
 | [0207-course-schedule](https://github.com/thenameisvir/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/thenameisvir/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/thenameisvir/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
@@ -769,6 +773,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/thenameisvir/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/thenameisvir/LeetCode/tree/master/0112-path-sum) |
 | [0199-binary-tree-right-side-view](https://github.com/thenameisvir/LeetCode/tree/master/0199-binary-tree-right-side-view) |
+| [0200-number-of-islands](https://github.com/thenameisvir/LeetCode/tree/master/0200-number-of-islands) |
 | [0207-course-schedule](https://github.com/thenameisvir/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/thenameisvir/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0322-coin-change](https://github.com/thenameisvir/LeetCode/tree/master/0322-coin-change) |
