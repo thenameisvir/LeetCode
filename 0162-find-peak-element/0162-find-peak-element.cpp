@@ -1,7 +1,7 @@
 class Solution {
 public:
     int peak(vector<int>& nums){
-        if(nums.size()<=1) return 0;
+        // if(nums.size()<=1) return 0;
         int s = 0;
         int e = nums.size()-1;
         int m = s+(e-s)/2;
