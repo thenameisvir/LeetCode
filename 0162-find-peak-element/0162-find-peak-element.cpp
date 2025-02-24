@@ -14,7 +14,7 @@ public:
             }
             m = s+(e-s)/2;
         }
-        return s;
+        return e;
     }
     int findPeakElement(vector<int>& nums) {
         int ans =  peak(nums);
