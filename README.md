@@ -516,6 +516,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2163-kth-distinct-string-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/thenameisvir/LeetCode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2235-capitalize-the-title](https://github.com/thenameisvir/LeetCode/tree/master/2235-capitalize-the-title) |
+| [2243-check-if-all-as-appears-before-all-bs](https://github.com/thenameisvir/LeetCode/tree/master/2243-check-if-all-as-appears-before-all-bs) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/thenameisvir/LeetCode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/thenameisvir/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2406-decode-the-message](https://github.com/thenameisvir/LeetCode/tree/master/2406-decode-the-message) |
