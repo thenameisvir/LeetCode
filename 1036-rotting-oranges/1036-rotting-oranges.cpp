@@ -17,7 +17,7 @@ public:
             int size = q.size();
             bool rotted = false;
 
-            while (size--) {
+            while (size--){
                 auto topPair = q.front();
                 int tempx = topPair.first;
                 int tempy = topPair.second;
