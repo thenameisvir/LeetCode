@@ -650,6 +650,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0437-path-sum-iii](https://github.com/thenameisvir/LeetCode/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/thenameisvir/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/thenameisvir/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0774-maximum-depth-of-n-ary-tree](https://github.com/thenameisvir/LeetCode/tree/master/0774-maximum-depth-of-n-ary-tree) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0783-search-in-a-binary-search-tree](https://github.com/thenameisvir/LeetCode/tree/master/0783-search-in-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/thenameisvir/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -690,6 +691,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/thenameisvir/LeetCode/tree/master/0547-number-of-provinces) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/thenameisvir/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0733-flood-fill](https://github.com/thenameisvir/LeetCode/tree/master/0733-flood-fill) |
+| [0774-maximum-depth-of-n-ary-tree](https://github.com/thenameisvir/LeetCode/tree/master/0774-maximum-depth-of-n-ary-tree) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0863-sum-of-distances-in-tree](https://github.com/thenameisvir/LeetCode/tree/master/0863-sum-of-distances-in-tree) |
 | [0975-range-sum-of-bst](https://github.com/thenameisvir/LeetCode/tree/master/0975-range-sum-of-bst) |
@@ -798,6 +800,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/thenameisvir/LeetCode/tree/master/0547-number-of-provinces) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/thenameisvir/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0733-flood-fill](https://github.com/thenameisvir/LeetCode/tree/master/0733-flood-fill) |
+| [0774-maximum-depth-of-n-ary-tree](https://github.com/thenameisvir/LeetCode/tree/master/0774-maximum-depth-of-n-ary-tree) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/thenameisvir/LeetCode/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [0999-regions-cut-by-slashes](https://github.com/thenameisvir/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/thenameisvir/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
