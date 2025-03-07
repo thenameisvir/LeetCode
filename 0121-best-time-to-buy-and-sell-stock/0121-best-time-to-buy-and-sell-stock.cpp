@@ -1,28 +1,14 @@
 class Solution {
 public:
-    int nikalo(vector<int>& arr,int mini,int maxi,int index,int size){
-        if(index>=size){
-            return maxi;
+    int maxProfit(vector<int>& prices) {
+        int mini = prices[0];
+        int profit = 0;
+        for(int i=1;i<prices.size();i++){
+            int diff = prices[i] - mini;
+            profit = max(profit,diff);
+            mini = min(mini,prices[i]);
         }
 
-        if(arr[index]<mini){
-            mini = arr[index];
-        }
-        int cp = arr[index] - mini;
-
-        if(cp>maxi){
-            maxi = cp;
-        }
-
-        return nikalo(arr,mini,maxi,index+1,size);
-    }
-
-    int maxProfit(vector<int>& arr) {
-        int mini = INT_MAX;
-        int index = 0;
-        int maxi = 0;
-        int size = arr.size();
-        int ans = nikalo(arr,mini,maxi,index,size);
-        return ans;
+        return profit;
     }
 };
