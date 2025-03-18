@@ -1,14 +1,18 @@
 class Solution {
 public:
+    vector<pair<string, int>> mp = {
+        {"M",1000}, {"CM",900}, {"D",500}, {"CD",400},
+        {"C",100}, {"XC",90}, {"L",50}, {"XL",40},
+        {"X",10}, {"IX",9}, {"V",5}, {"IV",4}, {"I",1}
+    };
+
     string intToRoman(int num) {
-        string romanSymbols[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
-        int values[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
         string ans = "";
         
-        for(int i = 0; i < 13; i++) {
-            while(num >= values[i]) {
-                ans += romanSymbols[i];
-                num -= values[i];
+        for (auto str : mp) {
+            while (num >= str.second) {
+                ans += str.first;  // Add Roman numeral
+                num -= str.second; // Reduce number
             }
         }
         
