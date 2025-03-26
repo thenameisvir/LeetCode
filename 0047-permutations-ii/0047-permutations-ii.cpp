@@ -1,30 +1,31 @@
 class Solution {
 public:
-    void solve(vector<int>& nums, vector<bool>& used, vector<int>& ans, vector<vector<int>>& v) {
-        if (ans.size() == nums.size()) {
-            v.push_back(ans);
+    void solve(vector<int>& nums,vector<vector<int>>&v,vector<int>&ans,int index){
+        // base case baad me likhenge
+        if(index>=nums.size()){
+            v.push_back(nums);
             return;
         }
 
-        for (int i = 0; i < nums.size(); i++) {
-            if (used[i]) continue; // Already used element ko skip karo
-            if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) continue; // Duplicate check
-
-            used[i] = true;
-            ans.push_back(nums[i]);
-            solve(nums, used, ans, v);
-            ans.pop_back();
-            used[i] = false;
+        // ek case solve karte hai 
+        unordered_map<int,bool>vis;
+        for(int i=index;i<nums.size();i++){
+            // pehle toh swap kardo 
+            if(vis.find(nums[i])!=vis.end()){
+                continue;
+            }
+            vis[nums[i]]=true;
+            if(i>index && nums[i]==nums[i-1]) continue;
+            swap(nums[i],nums[index]);
+            solve(nums,v,ans,index+1);
+            swap(nums[i],nums[index]);
         }
     }
-
     vector<vector<int>> permuteUnique(vector<int>& nums) {
-        vector<vector<int>> v;
-        vector<int> ans;
-        vector<bool> used(nums.size(), false);
-
-        sort(nums.begin(), nums.end());  // Sorting zaroori hai!
-        solve(nums, used, ans, v);
+        vector<vector<int>>v;
+        vector<int>ans;
+        sort(nums.begin(),nums.end());
+        solve(nums,v,ans,0);
         return v;
     }
 };
