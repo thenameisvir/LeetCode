@@ -1,35 +1,27 @@
 class Solution {
 public:
-    int solve(vector<int>& coins, int amount,vector<int>&dp){
-        if(amount==0) return 0;
-        if(amount<0) return INT_MAX;
-        // base case ho gaye hai ab main case
+    int tab(vector<int>& coins, int amount) {
+        int n = amount;
+        vector<int> dp(n + 1, INT_MAX); // ✅ Fix: INT_MAX se initialize kiya
+        dp[0] = 0; // ✅ Fix: Base case
 
-        if(dp[amount]!=-1) return dp[amount];
-        int mini = INT_MAX;
-        for(int i=0;i<coins.size();i++){
-            int recAns;
+        for (int value = 1; value <= amount; value++) {
+            int mini = INT_MAX;
+            for (int i = 0; i < coins.size(); i++) {
+                if (coins[i] > value) continue; // ✅ Fix: Agar coin bada hai toh skip kar
 
-            if(coins[i]>amount){
-                recAns = INT_MAX;
+                int recAns = dp[value - coins[i]];
+                if (recAns != INT_MAX) { // ✅ Fix: Agar valid answer hai toh hi update kar
+                    mini = min(mini, 1 + recAns);
+                }
             }
-
-            recAns = solve(coins,amount-coins[i],dp);
-            if(recAns!=INT_MAX){
-                int temp = 1 + recAns;
-                mini = min(temp,mini);
-            }
-
-            
+            dp[value] = mini;
         }
-        dp[amount] = mini;
 
-        return dp[amount];
+        return (dp[amount] == INT_MAX) ? -1 : dp[amount]; // ✅ Fix: Agar answer nahi bana toh -1 return karna
     }
+
     int coinChange(vector<int>& coins, int amount) {
-        vector<int>dp(amount+1,-1);
-        int ans = solve(coins,amount,dp);
-        if(ans==INT_MAX) return -1;
-        return ans;
+        return tab(coins, amount);
     }
 };
