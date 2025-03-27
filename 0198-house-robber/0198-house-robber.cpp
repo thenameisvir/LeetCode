@@ -1,43 +1,21 @@
 class Solution {
 public:
-    int solveUsingMemo(vector<int>& nums,int index,vector<int>&dp){
-        // base case analyse kr
-        if(index>=nums.size()){
-            return 0; // kya hi chori karega tab bc
-        }
+    int solve(vector<int>& nums,int i,vector<int>&dp){
+        // base case would be 
+        if(i>=nums.size()) return 0;
 
+        // main case would be
+        if(dp[i]!=INT_MIN) return dp[i];
+        int inc = nums[i] + solve(nums,i+2,dp);
+        int exc = 0 + solve(nums,i+1,dp);
 
-        if(dp[index]!=-1){
-            return dp[index];
-        }
+        dp[i] =  max(inc,exc);
 
-
-        // ek case solve karde
-        int inc = nums[index] + solveUsingMemo(nums,index+2,dp);
-        int exc = 0 + solveUsingMemo(nums,index+1,dp);
-        // return max(inc,exc);
-        int ans = max(inc,exc);
-        dp[index] = ans;
-        return dp[index];
-    }
-    int solveByTabulation(vector<int>& nums){
-        vector<int>dp(nums.size()+1,0);
-        int n = nums.size();
-        // ek ans dalna padega humko somehow
-        dp[n-1] = nums[n-1];
-        
-        for(int i=n-2;i>=0;i--){
-        int inc = nums[i] + dp[i+2];
-        int exc = 0 + dp[i+1];
-
-        dp[i] = max(inc,exc);
-        }
-
-        return dp[0];
+        return dp[i];
     }
     int rob(vector<int>& nums) {
-        vector<int>dp(nums.size(),-1);
-        int ans = solveByTabulation(nums);
+        vector<int>dp(nums.size()+1,INT_MIN);
+        int ans = solve(nums,0,dp);
         return ans;
     }
 };
