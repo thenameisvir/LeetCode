@@ -120,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2727-number-of-senior-citizens](https://github.com/thenameisvir/LeetCode/tree/master/2727-number-of-senior-citizens) |
 | [2755-extra-characters-in-a-string](https://github.com/thenameisvir/LeetCode/tree/master/2755-extra-characters-in-a-string) |
 | [2846-robot-collisions](https://github.com/thenameisvir/LeetCode/tree/master/2846-robot-collisions) |
+| [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/thenameisvir/LeetCode/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
 | [3227-find-missing-and-repeated-values](https://github.com/thenameisvir/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/thenameisvir/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/thenameisvir/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
@@ -463,6 +464,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2067-maximum-number-of-points-with-cost](https://github.com/thenameisvir/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/thenameisvir/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2755-extra-characters-in-a-string](https://github.com/thenameisvir/LeetCode/tree/master/2755-extra-characters-in-a-string) |
+| [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/thenameisvir/LeetCode/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
 ## Recursion
 |  |
 | ------- |
