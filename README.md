@@ -121,6 +121,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2755-extra-characters-in-a-string](https://github.com/thenameisvir/LeetCode/tree/master/2755-extra-characters-in-a-string) |
 | [2846-robot-collisions](https://github.com/thenameisvir/LeetCode/tree/master/2846-robot-collisions) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/thenameisvir/LeetCode/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
+| [3154-maximum-value-of-an-ordered-triplet-i](https://github.com/thenameisvir/LeetCode/tree/master/3154-maximum-value-of-an-ordered-triplet-i) |
 | [3227-find-missing-and-repeated-values](https://github.com/thenameisvir/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/thenameisvir/LeetCode/tree/master/3231-minimum-number-of-coins-to-be-added) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/thenameisvir/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
