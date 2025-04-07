@@ -29,6 +29,6 @@ public:
         string a = s;
         string b = s;
         reverse(b.begin(),b.end());
-        int ans = usingTab(a,b); return ans;
+        int anss = usingTab(a,b); return anss;
     }
 };
