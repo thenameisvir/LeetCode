@@ -1,36 +1,24 @@
 class Solution {
 public:
-    int usingRec(vector<int>& nums,int curr,int prev){
-        if(curr>=nums.size()) return 0;
+    int solve(vector<int>& nums, int i, int prev, vector<vector<int>>& dp) {
+        if (i >= nums.size()) return 0;
 
-        // calculate one ans only 
-
-        int inc = 0, exc = 0;
-        if(prev==-1 || nums[curr]>nums[prev]){
-            inc = 1 + usingRec(nums,curr+1,curr);
-        }
-        exc = 0 + usingRec(nums,curr+1,prev);
-
-        return max(inc,exc);
-    }
-    int usingTab(vector<int>& nums,int curr,int prev,vector<vector<int>>&dp){
-        if(curr>=nums.size()) return 0;
-
-        if(dp[curr][prev+1] != -5) return dp[curr][prev+1];
+        if (dp[i][prev + 1] != INT_MIN) return dp[i][prev + 1];
 
         int inc = 0, exc = 0;
-        if(prev==-1 || nums[curr]>nums[prev]){
-            inc = 1 + usingTab(nums,curr+1,curr,dp);
+        if (prev == -1 || nums[i] > nums[prev]) {
+            inc = 1 + solve(nums, i + 1, i, dp);
         }
-        exc = 0 + usingTab(nums,curr+1,prev,dp);
+        exc = solve(nums, i + 1, prev, dp);
 
-        dp[curr][prev+1] = max(inc, exc);
-return dp[curr][prev+1];
-
-
+        dp[i][prev + 1] = max(inc, exc);
+        return dp[i][prev + 1];
     }
+
     int lengthOfLIS(vector<int>& nums) {
-        vector<vector<int>>dp(nums.size()+1,vector<int>(nums.size()+1,-5));
-        int ans  = usingTab(nums,0,-1,dp); return ans;
+        int n = nums.size();
+        // prev ranges from -1 to n-1, so we need n+1 size in second dimension
+        vector<vector<int>> dp(n+1, vector<int>(n + 1, INT_MIN));
+        return solve(nums, 0, -1, dp);
     }
 };
