@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/thenameisvir/LeetCode/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/thenameisvir/LeetCode/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/thenameisvir/LeetCode/tree/master/0054-spiral-matrix) |
+| [0055-jump-game](https://github.com/thenameisvir/LeetCode/tree/master/0055-jump-game) |
 | [0074-search-a-2d-matrix](https://github.com/thenameisvir/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/thenameisvir/LeetCode/tree/master/0075-sort-colors) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/thenameisvir/LeetCode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
@@ -232,6 +233,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0045-jump-game-ii](https://github.com/thenameisvir/LeetCode/tree/master/0045-jump-game-ii) |
+| [0055-jump-game](https://github.com/thenameisvir/LeetCode/tree/master/0055-jump-game) |
 | [0134-gas-station](https://github.com/thenameisvir/LeetCode/tree/master/0134-gas-station) |
 | [0179-largest-number](https://github.com/thenameisvir/LeetCode/tree/master/0179-largest-number) |
 | [0624-maximum-distance-in-arrays](https://github.com/thenameisvir/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
@@ -442,6 +444,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/thenameisvir/LeetCode/tree/master/0032-longest-valid-parentheses) |
 | [0045-jump-game-ii](https://github.com/thenameisvir/LeetCode/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/thenameisvir/LeetCode/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/thenameisvir/LeetCode/tree/master/0055-jump-game) |
 | [0070-climbing-stairs](https://github.com/thenameisvir/LeetCode/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/thenameisvir/LeetCode/tree/master/0072-edit-distance) |
 | [0085-maximal-rectangle](https://github.com/thenameisvir/LeetCode/tree/master/0085-maximal-rectangle) |
