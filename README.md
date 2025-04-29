@@ -295,6 +295,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0264-ugly-number-ii](https://github.com/thenameisvir/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/thenameisvir/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/thenameisvir/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0383-ransom-note](https://github.com/thenameisvir/LeetCode/tree/master/0383-ransom-note) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0560-subarray-sum-equals-k](https://github.com/thenameisvir/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/thenameisvir/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
@@ -539,6 +540,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0273-integer-to-english-words](https://github.com/thenameisvir/LeetCode/tree/master/0273-integer-to-english-words) |
 | [0344-reverse-string](https://github.com/thenameisvir/LeetCode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/thenameisvir/LeetCode/tree/master/0345-reverse-vowels-of-a-string) |
+| [0383-ransom-note](https://github.com/thenameisvir/LeetCode/tree/master/0383-ransom-note) |
 | [0394-decode-string](https://github.com/thenameisvir/LeetCode/tree/master/0394-decode-string) |
 | [0415-add-strings](https://github.com/thenameisvir/LeetCode/tree/master/0415-add-strings) |
 | [0443-string-compression](https://github.com/thenameisvir/LeetCode/tree/master/0443-string-compression) |
@@ -817,6 +819,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/thenameisvir/LeetCode/tree/master/0169-majority-element) |
+| [0383-ransom-note](https://github.com/thenameisvir/LeetCode/tree/master/0383-ransom-note) |
 | [0778-reorganize-string](https://github.com/thenameisvir/LeetCode/tree/master/0778-reorganize-string) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/thenameisvir/LeetCode/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0948-sort-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0948-sort-an-array) |
