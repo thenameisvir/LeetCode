@@ -1,27 +1,23 @@
 class Solution {
-public:
-    int tab(vector<int>& coins, int amount) {
-        int n = amount;
-        vector<int> dp(n + 1, INT_MAX); // ✅ Fix: INT_MAX se initialize kiya
-        dp[0] = 0; // ✅ Fix: Base case
+  public:
+    int solve(vector<int>& coins, int sum, int i, vector<vector<int>>& dp) {
+        if (sum == 0) return 0;             // No coins needed to make 0
+        if (i >= coins.size() || sum < 0) return 1e9;  // Invalid path
 
-        for (int value = 1; value <= amount; value++) {
-            int mini = INT_MAX;
-            for (int i = 0; i < coins.size(); i++) {
-                if (coins[i] > value) continue; // ✅ Fix: Agar coin bada hai toh skip kar
+        if (dp[sum][i] != -1) return dp[sum][i];
 
-                int recAns = dp[value - coins[i]];
-                if (recAns != INT_MAX) { // ✅ Fix: Agar valid answer hai toh hi update kar
-                    mini = min(mini, 1 + recAns);
-                }
-            }
-            dp[value] = mini;
-        }
+        // include current coin
+        int inc = 1 + solve(coins, sum - coins[i], i, dp); 
 
-        return (dp[amount] == INT_MAX) ? -1 : dp[amount]; // ✅ Fix: Agar answer nahi bana toh -1 return karna
+        // exclude current coin
+        int exc = solve(coins, sum, i + 1, dp);        
+
+        return dp[sum][i] = min(inc, exc);
     }
 
-    int coinChange(vector<int>& coins, int amount) {
-        return tab(coins, amount);
+    int coinChange(vector<int>& coins, int sum) {
+        vector<vector<int>> dp(sum + 1, vector<int>(coins.size() + 1, -1));
+        int ans = solve(coins, sum, 0, dp);
+        return (ans >= 1e9) ? -1 : ans;  // If not possible to form sum
     }
 };
