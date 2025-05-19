@@ -97,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1496-lucky-numbers-in-a-matrix](https://github.com/thenameisvir/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1511-count-number-of-teams](https://github.com/thenameisvir/LeetCode/tree/master/1511-count-number-of-teams) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/thenameisvir/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
+| [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/thenameisvir/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/thenameisvir/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/thenameisvir/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/thenameisvir/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
@@ -618,6 +619,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/thenameisvir/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/thenameisvir/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/thenameisvir/LeetCode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
+| [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/thenameisvir/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1720-crawler-log-folder](https://github.com/thenameisvir/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/thenameisvir/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/thenameisvir/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
@@ -981,6 +983,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0883-car-fleet](https://github.com/thenameisvir/LeetCode/tree/master/0883-car-fleet) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1072-next-greater-node-in-linked-list](https://github.com/thenameisvir/LeetCode/tree/master/1072-next-greater-node-in-linked-list) |
+| [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/thenameisvir/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 ## Monotonic Queue
 |  |
 | ------- |
