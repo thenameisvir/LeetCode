@@ -2,27 +2,27 @@ class Solution {
 public:
     vector<int> nextLargerNodes(ListNode* head) {
         vector<int> v;
-        while (head) {
-            v.push_back(head->val);
-            head = head->next;
+        ListNode* temp = head;
+        while (temp != NULL) {
+            v.push_back(temp->val);
+            temp = temp->next;
         }
 
-        stack<int> st;
-        for (int i = v.size() - 1; i >= 0; i--) {
-            int curr = v[i];
+        vector<int> ans(v.size(), 0);
+        stack<int> st; // empty stack
 
-            // Pop until the stack has a larger element on top or is empty
-            while (!st.empty() && st.top() <= curr) {
+        for (int i = v.size() - 1; i >= 0; i--) {
+            while (!st.empty() && st.top() <= v[i]) {
                 st.pop();
             }
 
-            // Set the next greater element or 0 if none exists
-            v[i] = st.empty() ? 0 : st.top();
+            if (!st.empty()) {
+                ans[i] = st.top();
+            }
 
-            // Push the current element onto the stack
-            st.push(curr);
+            st.push(v[i]);
         }
 
-        return v;
+        return ans;
     }
 };
