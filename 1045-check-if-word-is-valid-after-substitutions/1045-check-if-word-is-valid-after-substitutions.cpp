@@ -1,30 +1,33 @@
 class Solution {
 public:
-    bool isValid(string s) {
+    bool isValid(string str) {
         stack<char>st;
-
-        for(int i=0;i<s.length();i++){
-             char ch = s[i];
-
-             st.push(ch);
-
-             while(st.size()>=3){
-                char c = st.top(); st.pop();
-                char b = st.top(); st.pop();
-                char a = st.top(); st.pop();
-
-                if(c=='c' && b=='b' && a=='a'){
+        for(int i=0;i<str.size();i++){
+            if(str[i]=='a'){
+                st.push(str[i]);
+            }
+            else if(str[i]=='b'){
+                st.push(str[i]);
+            }
+            else if(str[i]=='c' && st.size()>=2){
+                char ch1 = st.top();st.pop();
+                char ch2 = st.top();st.pop();
+                if(ch1=='b' && ch2=='a'){
                     continue;
                 }
                 else{
-                    st.push(a);
-                    st.push(b);
-                    st.push(c);
-                    break;
+                    st.push(ch2);
+                    st.push(ch1);
+                    st.push(str[i]);
                 }
-             }
+            }
+            else if(str[i]=='c' && st.size()<2){
+                st.push(str[i]);
+            }
         }
 
-        return st.empty();
+        if(st.empty()) return true;
+
+        return false;
     }
 };
