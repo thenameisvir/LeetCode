@@ -612,6 +612,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/thenameisvir/LeetCode/tree/master/0739-daily-temperatures) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0883-car-fleet](https://github.com/thenameisvir/LeetCode/tree/master/0883-car-fleet) |
+| [0937-online-stock-span](https://github.com/thenameisvir/LeetCode/tree/master/0937-online-stock-span) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/thenameisvir/LeetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1045-check-if-word-is-valid-after-substitutions](https://github.com/thenameisvir/LeetCode/tree/master/1045-check-if-word-is-valid-after-substitutions) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
@@ -904,6 +905,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/thenameisvir/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0729-my-calendar-i](https://github.com/thenameisvir/LeetCode/tree/master/0729-my-calendar-i) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/thenameisvir/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0937-online-stock-span](https://github.com/thenameisvir/LeetCode/tree/master/0937-online-stock-span) |
 | [0969-number-of-recent-calls](https://github.com/thenameisvir/LeetCode/tree/master/0969-number-of-recent-calls) |
 ## Binary Search Tree
 |  |
@@ -924,6 +926,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/thenameisvir/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/thenameisvir/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0937-online-stock-span](https://github.com/thenameisvir/LeetCode/tree/master/0937-online-stock-span) |
 | [0969-number-of-recent-calls](https://github.com/thenameisvir/LeetCode/tree/master/0969-number-of-recent-calls) |
 ## Backtracking
 |  |
@@ -981,6 +984,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0085-maximal-rectangle](https://github.com/thenameisvir/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0739-daily-temperatures](https://github.com/thenameisvir/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/thenameisvir/LeetCode/tree/master/0883-car-fleet) |
+| [0937-online-stock-span](https://github.com/thenameisvir/LeetCode/tree/master/0937-online-stock-span) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1072-next-greater-node-in-linked-list](https://github.com/thenameisvir/LeetCode/tree/master/1072-next-greater-node-in-linked-list) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/thenameisvir/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
