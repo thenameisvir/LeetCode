@@ -7,13 +7,14 @@ public:
         for (int i = 0; i < str.size(); i++) {
             string temp = "";
             long long int num = 0;
+
             if (str[i] >= '0' && str[i] <= '9') {
-                while(i<str.size() && str[i] >= '0' && str[i] <= '9'){
-                    int a = str[i]-'0';
-                    num = (num*10) + a;
-                    i++;
+                while (i < str.size() && str[i] >= '0' && str[i] <= '9') {
+                    int a = str[i] - '0';
+                    num = (num * 10) + a;
+                    i++; // ✅ important
                 }
-                i--;
+                i--; // ✅ to balance for-loop's i++
                 st2.push(num);
             }
             else if (str[i] == '[' || (str[i] >= 'a' && str[i] <= 'z')) {
