@@ -1,55 +1,55 @@
 class Solution {
 public:
-    string decodeString(string s) {
-        stack<string>st;
+    string decodeString(string str) {
+        stack<string> st1;
+        stack<long long int> st2;
 
-        for(int i=0;i<s.length();i++){
-            char ch = s[i];
-
-            if(ch==']'){
-                string stringToRepeat = "";
-                while(!st.empty() && !isdigit(st.top()[0])){
-                    string top = st.top();
-                    stringToRepeat+=top=="["? "" : top;
-                    st.pop();
+        for (int i = 0; i < str.size(); i++) {
+            string temp = "";
+            long long int num = 0;
+            if (str[i] >= '0' && str[i] <= '9') {
+                while(i<str.size() && str[i] >= '0' && str[i] <= '9'){
+                    int a = str[i]-'0';
+                    num = (num*10) + a;
+                    i++;
                 }
-
-                string numericTimes = "";
-                while(!st.empty() && isdigit(st.top()[0])){
-                    numericTimes+=st.top();
-                    st.pop();
-
-                }
-
-                reverse(numericTimes.begin(),numericTimes.end());
-
-                int n = stoi(numericTimes);
-                
-                // final decoding 
-                string current = "";
-                while(n--){
-                    current+=stringToRepeat;
-                }
-                st.push(current);
+                i--;
+                st2.push(num);
             }
+            else if (str[i] == '[' || (str[i] >= 'a' && str[i] <= 'z')) {
+                st1.push(string(1, str[i]));
+            }
+            else if (str[i] == ']') {
+                while (!st1.empty() && st1.top() >= "a" && st1.top() <= "z") {
+                    temp = st1.top() + temp;
+                    st1.pop();
+                }
 
-            else{
-                string temp(1,ch);
-                st.push(temp);
+                if (!st1.empty() && st1.top() == "[") {
+                    st1.pop();
+                }
+
+                string temp2 = "";
+                int a = 0;
+                if (!st2.empty()) {
+                    a = st2.top();
+                    st2.pop();
+                }
+
+                for (int j = 0; j < a; j++) {
+                    temp2 += temp;
+                }
+
+                st1.push(temp2);
             }
         }
 
+        string ans = "";
+        while (!st1.empty()) {
+            ans = st1.top() + ans;
+            st1.pop();
+        }
 
-        string ans;
-         while(!st.empty()){
-            ans+=st.top();
-            st.pop();
-         }
-
-
-         reverse(ans.begin(),ans.end());
-
-
-         return ans;
+        return ans;
     }
 };
