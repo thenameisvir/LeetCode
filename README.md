@@ -107,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1753-path-with-minimum-effort](https://github.com/thenameisvir/LeetCode/tree/master/1753-path-with-minimum-effort) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/thenameisvir/LeetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1803-average-waiting-time](https://github.com/thenameisvir/LeetCode/tree/master/1803-average-waiting-time) |
+| [1902-car-fleet-ii](https://github.com/thenameisvir/LeetCode/tree/master/1902-car-fleet-ii) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/thenameisvir/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/thenameisvir/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2035-count-sub-islands](https://github.com/thenameisvir/LeetCode/tree/master/2035-count-sub-islands) |
@@ -278,6 +279,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1325-path-with-maximum-probability](https://github.com/thenameisvir/LeetCode/tree/master/1325-path-with-maximum-probability) |
 | [1397-search-suggestions-system](https://github.com/thenameisvir/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1753-path-with-minimum-effort](https://github.com/thenameisvir/LeetCode/tree/master/1753-path-with-minimum-effort) |
+| [1902-car-fleet-ii](https://github.com/thenameisvir/LeetCode/tree/master/1902-car-fleet-ii) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/thenameisvir/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/thenameisvir/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2803-modify-graph-edge-weights](https://github.com/thenameisvir/LeetCode/tree/master/2803-modify-graph-edge-weights) |
@@ -443,6 +445,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1240-stone-game-ii](https://github.com/thenameisvir/LeetCode/tree/master/1240-stone-game-ii) |
 | [1642-water-bottles](https://github.com/thenameisvir/LeetCode/tree/master/1642-water-bottles) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/thenameisvir/LeetCode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
+| [1902-car-fleet-ii](https://github.com/thenameisvir/LeetCode/tree/master/1902-car-fleet-ii) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/thenameisvir/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2155-find-missing-observations](https://github.com/thenameisvir/LeetCode/tree/master/2155-find-missing-observations) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/thenameisvir/LeetCode/tree/master/2244-number-of-laser-beams-in-a-bank) |
@@ -624,6 +627,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1720-crawler-log-folder](https://github.com/thenameisvir/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/thenameisvir/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/thenameisvir/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
+| [1902-car-fleet-ii](https://github.com/thenameisvir/LeetCode/tree/master/1902-car-fleet-ii) |
 | [2846-robot-collisions](https://github.com/thenameisvir/LeetCode/tree/master/2846-robot-collisions) |
 | [2871-double-a-number-represented-as-a-linked-list](https://github.com/thenameisvir/LeetCode/tree/master/2871-double-a-number-represented-as-a-linked-list) |
 ## Prefix Sum
@@ -988,6 +992,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1072-next-greater-node-in-linked-list](https://github.com/thenameisvir/LeetCode/tree/master/1072-next-greater-node-in-linked-list) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/thenameisvir/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
+| [1902-car-fleet-ii](https://github.com/thenameisvir/LeetCode/tree/master/1902-car-fleet-ii) |
 ## Monotonic Queue
 |  |
 | ------- |
