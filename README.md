@@ -248,6 +248,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0055-jump-game](https://github.com/thenameisvir/LeetCode/tree/master/0055-jump-game) |
 | [0134-gas-station](https://github.com/thenameisvir/LeetCode/tree/master/0134-gas-station) |
 | [0179-largest-number](https://github.com/thenameisvir/LeetCode/tree/master/0179-largest-number) |
+| [0402-remove-k-digits](https://github.com/thenameisvir/LeetCode/tree/master/0402-remove-k-digits) |
 | [0624-maximum-distance-in-arrays](https://github.com/thenameisvir/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
 | [0680-valid-palindrome-ii](https://github.com/thenameisvir/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0778-reorganize-string](https://github.com/thenameisvir/LeetCode/tree/master/0778-reorganize-string) |
@@ -548,6 +549,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0345-reverse-vowels-of-a-string](https://github.com/thenameisvir/LeetCode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0383-ransom-note](https://github.com/thenameisvir/LeetCode/tree/master/0383-ransom-note) |
 | [0394-decode-string](https://github.com/thenameisvir/LeetCode/tree/master/0394-decode-string) |
+| [0402-remove-k-digits](https://github.com/thenameisvir/LeetCode/tree/master/0402-remove-k-digits) |
 | [0415-add-strings](https://github.com/thenameisvir/LeetCode/tree/master/0415-add-strings) |
 | [0443-string-compression](https://github.com/thenameisvir/LeetCode/tree/master/0443-string-compression) |
 | [0516-longest-palindromic-subsequence](https://github.com/thenameisvir/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
@@ -611,6 +613,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0232-implement-queue-using-stacks](https://github.com/thenameisvir/LeetCode/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/thenameisvir/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/thenameisvir/LeetCode/tree/master/0394-decode-string) |
+| [0402-remove-k-digits](https://github.com/thenameisvir/LeetCode/tree/master/0402-remove-k-digits) |
 | [0735-asteroid-collision](https://github.com/thenameisvir/LeetCode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/thenameisvir/LeetCode/tree/master/0739-daily-temperatures) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/0776-n-ary-tree-postorder-traversal) |
@@ -986,6 +989,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/thenameisvir/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/thenameisvir/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/thenameisvir/LeetCode/tree/master/0085-maximal-rectangle) |
+| [0402-remove-k-digits](https://github.com/thenameisvir/LeetCode/tree/master/0402-remove-k-digits) |
 | [0739-daily-temperatures](https://github.com/thenameisvir/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/thenameisvir/LeetCode/tree/master/0883-car-fleet) |
 | [0937-online-stock-span](https://github.com/thenameisvir/LeetCode/tree/master/0937-online-stock-span) |
