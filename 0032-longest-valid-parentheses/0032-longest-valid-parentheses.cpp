@@ -1,41 +1,49 @@
 class Solution {
 public:
     int longestValidParentheses(string str) {
-        int left = 0, right = 0, maxLen = 0;
-
-        // Left to Right
-        for(int i = 0; i < str.length(); i++) {
-            if(str[i] == '(') {
-                left++;
-            } else {
-                right++;
-            }
-
-            if(left == right) {
-                maxLen = max(maxLen, 2 * right);
-            }
-            else if(right > left) {
-                left = right = 0;
-            }
+     int leftCount = 0,rightCount = 0;
+     int maxValid = 0;
+     for(int i=0;i<str.size();i++){
+        if(str[i]=='('){
+            leftCount++;
+        }
+        else{
+            rightCount++;
         }
 
-        // Right to Left
-        left = right = 0;
-        for(int i = str.length() - 1; i >= 0; i--) {
-            if(str[i] == '(') {
-                left++;
-            } else {
-                right++;
-            }
+        if(leftCount==rightCount){
+            maxValid = max(maxValid,2*leftCount);
+        }
+        else if(rightCount>leftCount){
+            leftCount = 0;
+            rightCount = 0;
+        }
+     }
 
-            if(left == right) {
-                maxLen = max(maxLen, 2 * left);
-            }
-            else if(left > right) {
-                left = right = 0;
-            }
+     leftCount = 0;
+     rightCount = 0;
+
+     for(int i=str.size()-1;i>=0;i--){
+        if(str[i]=='('){
+            leftCount++;
+        }
+        else{
+            rightCount++;
         }
 
-        return maxLen;
+        if(leftCount==rightCount){
+            maxValid = max(maxValid,2*leftCount);
+        }
+        else if(rightCount<leftCount){
+            leftCount = 0;
+            rightCount = 0;
+        }
+     }
+
+     return maxValid;
+
+
+
+
     }
 };
