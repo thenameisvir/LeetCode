@@ -1,34 +1,26 @@
 class Solution {
-    class Car{
-        public:
-        int pos,speed;
-        Car(int p,int s):pos(p),speed(s) {};
-    };
-
-    static bool myComp(Car&a,Car&b){
-        return a.pos<b.pos;
-    }
 public:
+    static bool isComp(pair<int,int> a, pair<int,int> b){
+        return a.first > b.first;  // descending sort
+    }
 
     int carFleet(int target, vector<int>& position, vector<int>& speed) {
-        vector<Car>cars;
-        for(int i=0;i<position.size();i++){
-            Car car(position[i],speed[i]);
-            cars.push_back(car);
+        int n = position.size();
+        vector<pair<int,int>> v(n);
+        for(int i = 0; i < n; i++){
+            v[i] = {position[i], speed[i]};
         }
 
-        sort(cars.begin(),cars.end(),myComp);
+        sort(v.begin(), v.end(), isComp);  // descending order of position
 
-
-        stack<float>st;
-
-        for(auto car:cars){
-            float time = (target-car.pos)/((float)car.speed);
-            while(!st.empty() && time>=st.top()){
-                st.pop();
+        stack<float> st;
+        for(int i = 0; i < n; i++){
+            float time = (float)(target - v[i].first) / v[i].second;
+            if(!st.empty() && time <= st.top()){
+                // fleet mein merge ho jaayega, kuch nahi karna
+                continue;
             }
-
-            st.push(time);
+            st.push(time);  // nayi fleet
         }
 
         return st.size();
