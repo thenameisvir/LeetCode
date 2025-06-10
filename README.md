@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/thenameisvir/LeetCode/tree/master/0322-coin-change) |
 | [0349-intersection-of-two-arrays](https://github.com/thenameisvir/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/thenameisvir/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0503-next-greater-element-ii](https://github.com/thenameisvir/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0518-coin-change-ii](https://github.com/thenameisvir/LeetCode/tree/master/0518-coin-change-ii) |
 | [0526-beautiful-arrangement](https://github.com/thenameisvir/LeetCode/tree/master/0526-beautiful-arrangement) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0532-k-diff-pairs-in-an-array) |
@@ -614,6 +615,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/thenameisvir/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/thenameisvir/LeetCode/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/thenameisvir/LeetCode/tree/master/0402-remove-k-digits) |
+| [0503-next-greater-element-ii](https://github.com/thenameisvir/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0735-asteroid-collision](https://github.com/thenameisvir/LeetCode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/thenameisvir/LeetCode/tree/master/0739-daily-temperatures) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/0776-n-ary-tree-postorder-traversal) |
@@ -990,6 +992,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0084-largest-rectangle-in-histogram](https://github.com/thenameisvir/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/thenameisvir/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0402-remove-k-digits](https://github.com/thenameisvir/LeetCode/tree/master/0402-remove-k-digits) |
+| [0503-next-greater-element-ii](https://github.com/thenameisvir/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0739-daily-temperatures](https://github.com/thenameisvir/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/thenameisvir/LeetCode/tree/master/0883-car-fleet) |
 | [0937-online-stock-span](https://github.com/thenameisvir/LeetCode/tree/master/0937-online-stock-span) |
