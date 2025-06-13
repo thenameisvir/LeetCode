@@ -1,24 +1,19 @@
 class Solution {
 public:
-    int D = 0; // Variable to store the maximum diameter
+    pair<int, int> solve(TreeNode* root) {
+        if (!root) return {0, 0}; // {height, diameter}
 
-    int height(TreeNode* root) {
-        if (root == NULL) return 0;
+        auto left = solve(root->left);
+        auto right = solve(root->right);
 
-        // Recursively calculate the height of left and right subtrees
-        int leftAns = height(root->left);
-        int rightAns = height(root->right);
+        int currHeight = 1 + max(left.first, right.first);
+        int diameterThroughRoot = left.first + right.first;
+        int maxDiameter = max({left.second, right.second, diameterThroughRoot});
 
-        // Update the diameter: left height + right height
-        int currD = leftAns + rightAns;
-        D = max(currD, D);
-
-        // Return the height of the current node
-        return 1 + max(leftAns, rightAns);
+        return {currHeight, maxDiameter};
     }
 
     int diameterOfBinaryTree(TreeNode* root) {
-        height(root); // Calculate height and update the diameter
-        return D;     // Return the maximum diameter
+        return solve(root).second;
     }
 };
