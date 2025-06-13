@@ -11,48 +11,28 @@
  */
 class Solution {
 public:
-    int high(TreeNode* root){
-        if(root==NULL){
+    int height(TreeNode* root){
+        if(!root){
             return 0;
         }
 
-        int left = 1 + high(root->left);
-        int right = 1 + high(root->right);
-
+        int left = 1 + height(root->left);
+        int right = 1 + height(root->right);
 
         return max(left,right);
     }
     bool isBalanced(TreeNode* root) {
-        // first we go with the base case of this function
-        if(root==NULL){
+        if(!root) return true; // Ye toh obvious hai ki agar null hua toh balanced h
+
+        bool left = isBalanced(root->left);
+        bool right = isBalanced(root->right);
+        int diff = abs(height(root->left) - height(root->right));
+        bool final = diff<=1;
+
+        if(left && right && final){
             return true;
         }
 
-        // now calculate the heights of the remaining 
-
-        int left = high(root->left);
-        int right = high(root->right);
-
-        int diff = abs(left-right);
-
-        bool ans = (diff<=1);
-
-        if(!ans) return false;
-
-        // now apply the recursion
-
-        bool ans1 = isBalanced(root->left);
-        bool ans2 = isBalanced(root->right);
-
-
-
-        if(ans&&ans1&&ans2){
-            return true;
-        }
-        else{
-            return false;
-            
-        }
-
+        return false;
     }
 };
