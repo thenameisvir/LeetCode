@@ -1,37 +1,36 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
 class Solution {
 public:
-    int ans = 0;
-    void ansSum(TreeNode* root, long long sum){
-        if(!root) return;
+    bool check(TreeNode* root, long long target, long long sum, int &ans){
+        if(!root){
+            return false;
+        }
 
-        if(sum==root->val){
+        sum += root->val;
+        if(sum == target){
             ans++;
         }
 
-        ansSum(root->left,sum-root->val);
-        ansSum(root->right,sum-root->val);
+        bool left = check(root->left, target, sum, ans);
+        bool right = check(root->right, target, sum, ans);
 
+        return left || right;
     }
-    int pathSum(TreeNode* root, long long targetSum) {
-        
-        if(root){
 
-            ansSum(root,targetSum);
-            pathSum(root->left,targetSum);
-            pathSum(root->right,targetSum);
+    void isTree(TreeNode* root, long long target, int& ans){
+        if(!root){
+            return;
         }
-        return ans;
 
+        long long sum = 0;
+        check(root, target, sum, ans);
+
+        isTree(root->left, target, ans);
+        isTree(root->right, target, ans);
+    }
+
+    int pathSum(TreeNode* root, int target) {
+        int ans = 0;
+        isTree(root, (long long)target, ans);
+        return ans;
     }
 };
