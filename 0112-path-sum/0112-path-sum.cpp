@@ -11,17 +11,31 @@
  */
 class Solution {
 public:
-    bool hasPathSum(TreeNode* root, int target) {
-        // base case to be here only
-        if(!root) return false;
+    bool check(TreeNode* root, int target,int sum){
+        
+        if(!root){
+            return false;
+        }
 
-        if(!root->left && !root->right) return root->val==target;
+        sum+=root->val;
 
-        bool left = hasPathSum(root->left,target-root->val);
-        bool right = hasPathSum(root->right,target-root->val);
+        if(!root->left && !root->right && sum==target){
+            return true;
+        }
+        
+        bool left = check(root->left,target,sum);
+        bool right = check(root->right,target,sum);
 
-
+        sum-=root->val;
 
         return left||right;
+    }
+    bool hasPathSum(TreeNode* root, int target) {
+        // base case to be here only
+
+        
+        return check(root,target,0);
+
+
     }
 };
