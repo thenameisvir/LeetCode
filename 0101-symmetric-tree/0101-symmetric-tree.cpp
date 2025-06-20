@@ -11,17 +11,34 @@
  */
 class Solution {
 public:
-    bool mirror(TreeNode* p, TreeNode* q){
-         if(!p && !q) return true;
-
-        if(p&&q){
-            return (p->val == q->val)
-                && mirror(p->left,q->right)
-                && mirror(p->right,q->left);
+    void check1(TreeNode* root,vector<int>&v1){
+        if(!root){
+            v1.push_back(-1);
+            return;
         }
-        return false;
+
+        v1.push_back(root->val);
+        check1(root->left,v1);
+        check1(root->right,v1);
+    }
+    void check2(TreeNode* root,vector<int>&v2)
+    {
+        if(!root){
+            v2.push_back(-1);
+            return;
+        }
+
+        v2.push_back(root->val);
+        check2(root->right,v2);
+        check2(root->left,v2);
     }
     bool isSymmetric(TreeNode* root) {
-        return mirror(root->left,root->right);
+        if(!root) return true;
+        vector<int>v1;
+        vector<int>v2;
+        check1(root->left,v1);
+        check2(root->right,v2);
+
+        return v1==v2;
     }
 };
