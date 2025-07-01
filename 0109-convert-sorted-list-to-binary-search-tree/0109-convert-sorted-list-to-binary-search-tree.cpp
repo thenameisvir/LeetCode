@@ -21,30 +21,29 @@
  */
 class Solution {
 public:
-    TreeNode* okayokay(vector<int>arr,int s,int e){
-        // base case
+    TreeNode* solve(vector<int>v,int s,int e){
         if(s>e) return NULL;
-
+        // now one case only 
         int m = s+(e-s)/2;
-        TreeNode* root = new TreeNode(arr[m]);
+        TreeNode* newNode = new TreeNode(v[m]);
 
-        root->left = okayokay(arr,s,m-1);
-        root->right = okayokay(arr,m+1,e);
+        newNode->left = solve(v,s,m-1);
+        newNode->right = solve(v,m+1,e);
 
-        return root;
-
+        return newNode;
     }
     TreeNode* sortedListToBST(ListNode* head) {
-        vector<int>arr;
-        while(head){
-            int a = head->val;
-            arr.push_back(a);
-            head = head->next;
+        ListNode* temp = head;
+        vector<int>v;
+        while(temp){
+            v.push_back(temp->val);
+            temp = temp->next;
         }
-        int s = 0;
-        int e = arr.size()-1;
-        // int m = s+(e-s)/2;
 
-        return okayokay(arr,s,e);
+        int s = 0;
+        int e = v.size()-1;
+
+        return solve(v,s,e);
+
     }
 };
