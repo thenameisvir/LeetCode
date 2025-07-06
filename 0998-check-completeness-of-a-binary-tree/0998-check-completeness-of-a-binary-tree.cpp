@@ -14,27 +14,24 @@ public:
     bool isCompleteTree(TreeNode* root) {
         queue<TreeNode*>q;
         q.push(root);
-        bool flag = true;
+        bool isSeen = false;
+        
         while(!q.empty()){
-            TreeNode* current = q.front();
-            
-            if(current){
-                q.push(current->left);
-                q.push(current->right);
-                q.pop();
+            TreeNode* front = q.front();
+            q.pop();
+
+            if(!front){
+                isSeen = true;
             }
             else{
-                while(!q.empty()){
-                    if(q.front()!=NULL){
-                        flag = false;
-                        break;
-                    }
-                    q.pop();
-                }
+                // chec ka dekhenge
+                if(isSeen) return false;
+                q.push(front->left);
+                q.push(front->right);
             }
-
         }
 
-        return flag;
+        return true;
+
     }
 };
