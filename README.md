@@ -473,6 +473,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0072-edit-distance](https://github.com/thenameisvir/LeetCode/tree/master/0072-edit-distance) |
 | [0085-maximal-rectangle](https://github.com/thenameisvir/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/thenameisvir/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0132-palindrome-partitioning-ii](https://github.com/thenameisvir/LeetCode/tree/master/0132-palindrome-partitioning-ii) |
 | [0198-house-robber](https://github.com/thenameisvir/LeetCode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/thenameisvir/LeetCode/tree/master/0213-house-robber-ii) |
 | [0221-maximal-square](https://github.com/thenameisvir/LeetCode/tree/master/0221-maximal-square) |
@@ -544,6 +545,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0071-simplify-path](https://github.com/thenameisvir/LeetCode/tree/master/0071-simplify-path) |
 | [0072-edit-distance](https://github.com/thenameisvir/LeetCode/tree/master/0072-edit-distance) |
 | [0125-valid-palindrome](https://github.com/thenameisvir/LeetCode/tree/master/0125-valid-palindrome) |
+| [0132-palindrome-partitioning-ii](https://github.com/thenameisvir/LeetCode/tree/master/0132-palindrome-partitioning-ii) |
 | [0179-largest-number](https://github.com/thenameisvir/LeetCode/tree/master/0179-largest-number) |
 | [0205-isomorphic-strings](https://github.com/thenameisvir/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0214-shortest-palindrome](https://github.com/thenameisvir/LeetCode/tree/master/0214-shortest-palindrome) |
