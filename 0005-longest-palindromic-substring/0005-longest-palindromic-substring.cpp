@@ -1,28 +1,40 @@
 class Solution {
 public:
-    bool is_palindrome(string&s,int start,int end){
-        
-        while(start<end){
-            if(s[start]!=s[end]){
-                return false;
-            }
-            start++;
-            end--;
-        }
-        return true;
-    }
-    string longestPalindrome(string s) {
-        string ans = "";
-        for(int i=0;i<s.length();i++){
-            for(int j=i;j<s.length();j++){
-                if(is_palindrome(s,i,j)){
-                    string t = s.substr(i,j-i+1);
-                    if(t.size()>ans.size()){
-                        ans = t;
-                    }
+    int start = 0, maxLen = 1;
+
+    bool isPalindrome(int i, int j, string &s, vector<vector<int>>& dp) {
+        // base cases
+        if (i >= j) return true;
+
+        // memoized
+        if (dp[i][j] != -1)
+            return dp[i][j];
+
+        if (s[i] == s[j]) {
+            // check inner substring
+            if (isPalindrome(i + 1, j - 1, s, dp)) {
+                // update longest palin substring if needed
+                if (j - i + 1 > maxLen) {
+                    maxLen = j - i + 1;
+                    start = i;
                 }
+                return dp[i][j] = true;
             }
         }
-        return ans;
+
+        return dp[i][j] = false;
+    }
+
+    string longestPalindrome(string s) {
+        int n = s.length();
+        vector<vector<int>> dp(n, vector<int>(n, -1));
+
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+                isPalindrome(i, j, s, dp);
+            }
+        }
+
+        return s.substr(start, maxLen);
     }
 };
