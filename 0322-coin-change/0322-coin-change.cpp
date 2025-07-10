@@ -1,23 +1,27 @@
 class Solution {
-  public:
-    int solve(vector<int>& coins, int sum, int i, vector<vector<int>>& dp) {
-        if (sum == 0) return 0;             // No coins needed to make 0
-        if (i >= coins.size() || sum < 0) return 1e9;  // Invalid path
+public:
+    int tab(vector<int>& coins, int amount) {
+        int n = amount;
+        vector<int> dp(n + 1, INT_MAX);
+        dp[0] = 0; 
 
-        if (dp[sum][i] != -1) return dp[sum][i];
+        for (int value = 1; value <= amount; value++) {
+            int mini = INT_MAX;
+            for (int i = 0; i < coins.size(); i++) {
+                if (coins[i] > value) continue; 
 
-        // include current coin
-        int inc = 1 + solve(coins, sum - coins[i], i, dp); 
+                int recAns = dp[value - coins[i]];
+                if (recAns != INT_MAX) { 
+                    mini = min(mini, 1 + recAns);
+                }
+            }
+            dp[value] = mini;
+        }
 
-        // exclude current coin
-        int exc = solve(coins, sum, i + 1, dp);        
-
-        return dp[sum][i] = min(inc, exc);
+        return (dp[amount] == INT_MAX) ? -1 : dp[amount]; 
     }
 
-    int coinChange(vector<int>& coins, int sum) {
-        vector<vector<int>> dp(sum + 1, vector<int>(coins.size() + 1, -1));
-        int ans = solve(coins, sum, 0, dp);
-        return (ans >= 1e9) ? -1 : ans;  // If not possible to form sum
+    int coinChange(vector<int>& coins, int amount) {
+        return tab(coins, amount);
     }
 };
