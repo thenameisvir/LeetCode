@@ -5,14 +5,18 @@ public:
         if(n == 0) return 0;
         if(n == 1) return nums[0];
 
-        vector<int> ans(n, 0);
-        ans[n - 1] = nums[n - 1];
-        ans[n - 2] = max(nums[n - 2], nums[n - 1]);
+        int next = nums[n-1];                  // DP[i+2]
+        int curr = max(nums[n-2], nums[n-1]);  // DP[i+1]
 
-        for(int i = n - 3; i >= 0; i--) {
-            ans[i] = max(nums[i] + ans[i + 2], ans[i + 1]);
+        for(int i = n-3; i >= 0; i--) {
+            int pick = nums[i] + next;         // include current
+            int skip = curr;                   // exclude current
+            int temp = max(pick, skip);        // DP[i]
+
+            next = curr;
+            curr = temp;
         }
 
-        return ans[0];
+        return curr;
     }
 };
