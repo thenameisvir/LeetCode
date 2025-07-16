@@ -1,36 +1,28 @@
 class Solution {
 public:
-    
-    
-    int tab(string s1, string s2){
-        int i = s1.length();
-        int j = s2.length();
-        vector<vector<int>>dp(i+1,vector<int>(j+1,0));
-
-        for(int m = i-1;m>=0;m--){
-            for(int n = j-1;n>=0;n--){
-                
-        int ans = 0;
-        if(s1[m]==s2[n]){
-            
-            ans = 1 + dp[m+1][n+1];
-        }
-        else{
-            // ek case tera ek case mera
-            ans = 0 + max(dp[m+1][n],dp[m][n+1]);
-            
+    int solve(string &str1, string &str2,int i,int j,vector<vector<int>>&dp){
+        if(i>=str1.size() || j>=str2.size()) {
+            return 0;
         }
 
-        dp[m][n] = ans;
-            }
+        if(dp[i][j]!=-1){
+            return dp[i][j];
         }
-        return dp[0][0];
+
+        int ans1 = 0;
+        if(str1[i]==str2[j]){
+            ans1 = 1 + solve(str1,str2,i+1,j+1,dp); 
+        }
+        int ans2 = 0 + solve(str1,str2,i,j+1,dp);
+        int ans3 = 0 + solve(str1,str2,i+1,j,dp);
+
+        return dp[i][j] = max(ans1,max(ans2,ans3));
+
     }
-    int longestCommonSubsequence(string &s1, string &s2) {
-        int i = s1.length();
-        int j = s2.length();
-        vector<vector<int>>dp(i+1,vector<int>(j+1,0));
-        return tab(s1,s2);
-        
+    int longestCommonSubsequence(string str1, string str2) {
+        vector<vector<int>>dp(str1.size()+1,vector<int>(str2.size()+1,-1));
+        int i = 0;
+        int j = 0;
+        return solve(str1,str2,i,j,dp);
     }
 };
