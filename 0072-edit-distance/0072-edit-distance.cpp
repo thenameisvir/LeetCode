@@ -1,32 +1,41 @@
 class Solution {
 public:
-    int solve(string& str1, string& str2, int i, int j,vector<vector<int>>&dp) {
-        if(i >= str1.size() && j >= str2.size()) return 0;
-        if(i >= str1.size()) return str2.size() - j;
-        if(j >= str2.size()) return str1.size() - i;
-
-
-        if(dp[i][j]!=0){
-            return dp[i][j];
-        }
-
-
-        if(str1[i] == str2[j]) {
-            return solve(str1, str2, i+1, j+1,dp);
-        }
-
-        // If not equal, consider replace, insert, delete
-        int replaceOp = 1 + solve(str1, str2, i+1, j+1,dp);
-        int insertOp = 1 + solve(str1, str2, i, j+1,dp);
-        int deleteOp = 1 + solve(str1, str2, i+1, j,dp);
-
-        return dp[i][j] =  min(replaceOp, min(insertOp, deleteOp));
-    }
-
-    int minDistance(string str1, string str2) {
+    int solve(string str1, string str2){
         int n = str1.size();
-        int m  = str2.size();
+        int m = str2.size();
+
         vector<vector<int>>dp(n+1,vector<int>(m+1,0));
-        return solve(str1, str2, 0, 0,dp);
+
+        for(int i=0;i<=n;i++){
+            dp[i][m] = n-i;
+        }
+
+        for(int i=0;i<=m;i++){
+            dp[n][i] = m-i;
+        }
+
+
+        for(int i=n-1;i>=0;i--){
+            for(int j=m-1;j>=0;j--){
+                int ans = 0;
+                if(str1[i]==str2[j]){
+                    dp[i][j] = dp[i+1][j+1];;
+                }
+                else{
+                int op1 = 1 + dp[i+1][j+1];
+                int op2 = 1 + dp[i][j+1];
+                int op3 = 1 + dp[i+1][j];
+
+                dp[i][j] = min(op1,min(op2,op3));
+                }
+                
+            }
+        }
+
+        return dp[0][0];
+
+    }
+    int minDistance(string word1, string word2) {
+        return solve(word1,word2);
     }
 };
