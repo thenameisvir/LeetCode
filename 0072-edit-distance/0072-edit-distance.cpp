@@ -1,66 +1,32 @@
 class Solution {
 public:
-    int check(string &word1, string &word2,int i,int j,vector<vector<int>>&dp){
-        // base case
-        if(i>=word1.length() && j>=word2.length()) return 0;
-        if(i>=word1.length() && j<word2.length()) return word2.length()-j;
-        if(j>=word2.length() && i<word1.length()) return word1.length()-i;
-        
-        if(dp[i][j]!=-1){
+    int solve(string& str1, string& str2, int i, int j,vector<vector<int>>&dp) {
+        if(i >= str1.size() && j >= str2.size()) return 0;
+        if(i >= str1.size()) return str2.size() - j;
+        if(j >= str2.size()) return str1.size() - i;
+
+
+        if(dp[i][j]!=0){
             return dp[i][j];
         }
 
-        // main case
-        int ans = 0;
-        if(word1[i]==word2[j]){
-            dp[i][j] = 0 + check(word1,word2,i+1,j+1,dp);
-        }
-        else{
-            int op1 = 1 + check(word1,word2,i+1,j+1,dp);
-            int op2 = 1 + check(word1,word2,i,j+1,dp);
-            int op3 = 1 + check(word1,word2,i+1,j,dp);
 
-            dp[i][j] = min(op1,min(op2,op3));
+        if(str1[i] == str2[j]) {
+            return solve(str1, str2, i+1, j+1,dp);
         }
 
-        return dp[i][j];
+        // If not equal, consider replace, insert, delete
+        int replaceOp = 1 + solve(str1, str2, i+1, j+1,dp);
+        int insertOp = 1 + solve(str1, str2, i, j+1,dp);
+        int deleteOp = 1 + solve(str1, str2, i+1, j,dp);
 
-    }
-    int tab(string word1, string word2){
-    vector<vector<int>>dp(word1.length() + 1, vector<int>(word2.length()+1,-1));
-    
-    for(int j = 0; j <= word2.length(); j++) {
-    dp[word1.length()][j] = word2.length() - j;
-}
-for(int i = 0; i <= word1.length(); i++) {
-    dp[i][word2.length()] = word1.length() - i;
-}
-
-    
-    for(int i = word1.length()-1;i>=0;i--){
-        for(int j = word2.length()-1;j>=0;j--){
-            int ans = 0;
-        if(word1[i]==word2[j]){
-            dp[i][j] = 0 + dp[i+1][j+1];
-        }
-        else{
-            int op1 = 1 + dp[i+1][j+1];
-            int op2 = 1 + dp[i][j+1];
-            int op3 = 1 + dp[i+1][j];
-
-            dp[i][j] = min(op1,min(op2,op3));
-        }
-
-        
-        }
+        return dp[i][j] =  min(replaceOp, min(insertOp, deleteOp));
     }
 
-    return dp[0][0];
-
-
-    }
-    int minDistance(string word1, string word2) {
-        vector<vector<int>>dp(word1.length() + 1, vector<int>(word2.length()+1,-1));
-        return tab(word1,word2);
+    int minDistance(string str1, string str2) {
+        int n = str1.size();
+        int m  = str2.size();
+        vector<vector<int>>dp(n+1,vector<int>(m+1,0));
+        return solve(str1, str2, 0, 0,dp);
     }
 };
