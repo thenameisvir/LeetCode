@@ -131,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/thenameisvir/LeetCode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2502-sort-the-people](https://github.com/thenameisvir/LeetCode/tree/master/2502-sort-the-people) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/thenameisvir/LeetCode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
+| [2526-longest-increasing-subsequence-ii](https://github.com/thenameisvir/LeetCode/tree/master/2526-longest-increasing-subsequence-ii) |
 | [2727-number-of-senior-citizens](https://github.com/thenameisvir/LeetCode/tree/master/2727-number-of-senior-citizens) |
 | [2755-extra-characters-in-a-string](https://github.com/thenameisvir/LeetCode/tree/master/2755-extra-characters-in-a-string) |
 | [2846-robot-collisions](https://github.com/thenameisvir/LeetCode/tree/master/2846-robot-collisions) |
@@ -410,6 +411,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0315-count-of-smaller-numbers-after-self](https://github.com/thenameisvir/LeetCode/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0948-sort-an-array](https://github.com/thenameisvir/LeetCode/tree/master/0948-sort-an-array) |
 | [1285-balance-a-binary-search-tree](https://github.com/thenameisvir/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
+| [2526-longest-increasing-subsequence-ii](https://github.com/thenameisvir/LeetCode/tree/master/2526-longest-increasing-subsequence-ii) |
 ## Quickselect
 |  |
 | ------- |
@@ -509,6 +511,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/thenameisvir/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/thenameisvir/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/thenameisvir/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
+| [2526-longest-increasing-subsequence-ii](https://github.com/thenameisvir/LeetCode/tree/master/2526-longest-increasing-subsequence-ii) |
 | [2755-extra-characters-in-a-string](https://github.com/thenameisvir/LeetCode/tree/master/2755-extra-characters-in-a-string) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/thenameisvir/LeetCode/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
 ## Recursion
@@ -539,6 +542,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0969-number-of-recent-calls](https://github.com/thenameisvir/LeetCode/tree/master/0969-number-of-recent-calls) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/thenameisvir/LeetCode/tree/master/0987-reveal-cards-in-increasing-order) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/thenameisvir/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2526-longest-increasing-subsequence-ii](https://github.com/thenameisvir/LeetCode/tree/master/2526-longest-increasing-subsequence-ii) |
 ## String
 |  |
 | ------- |
@@ -917,6 +921,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/thenameisvir/LeetCode/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [1511-count-number-of-teams](https://github.com/thenameisvir/LeetCode/tree/master/1511-count-number-of-teams) |
+| [2526-longest-increasing-subsequence-ii](https://github.com/thenameisvir/LeetCode/tree/master/2526-longest-increasing-subsequence-ii) |
 ## Trie
 |  |
 | ------- |
@@ -1006,6 +1011,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/thenameisvir/LeetCode/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0729-my-calendar-i](https://github.com/thenameisvir/LeetCode/tree/master/0729-my-calendar-i) |
+| [2526-longest-increasing-subsequence-ii](https://github.com/thenameisvir/LeetCode/tree/master/2526-longest-increasing-subsequence-ii) |
 ## Ordered Set
 |  |
 | ------- |
@@ -1031,6 +1037,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/thenameisvir/LeetCode/tree/master/0239-sliding-window-maximum) |
+| [2526-longest-increasing-subsequence-ii](https://github.com/thenameisvir/LeetCode/tree/master/2526-longest-increasing-subsequence-ii) |
 ## Interactive
 |  |
 | ------- |
