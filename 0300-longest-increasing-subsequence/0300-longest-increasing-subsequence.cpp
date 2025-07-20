@@ -1,38 +1,25 @@
 class Solution {
 public:
-    int binary(vector<int>&ans,int target){
-        int s = 0;
-        int e = ans.size()-1;
-        int m = s+(e-s)/2;
-        int vir = -1;
-        while(s<=e){
-            if(ans[m]>=target){
-                vir = m;
-                e = m-1;
-            }
-            else{
-                s = m+1;
-            }
-            m = s+(e-s)/2;
+    int solve(vector<int>&nums,int curr,int prev,vector<vector<int>>&dp){
+        if(curr>=nums.size()){
+            return 0;
         }
-        return vir;
+
+        if(dp[curr][prev+1]!=0){
+            return dp[curr][prev+1];
+        }
+
+        int inc = 0;
+        if(prev==-1 || nums[curr]>nums[prev]){
+            inc = 1 + solve(nums,curr+1,curr,dp);
+        }
+        int exc = 0 + solve(nums,curr+1,prev,dp);
+
+        return dp[curr][prev+1] =  max(inc,exc);
     }
     int lengthOfLIS(vector<int>& nums) {
-        vector<int>ans;
-        ans.push_back(nums[0]);
-        for(int i=1;i<nums.size();i++){
-            if(nums[i]>ans.back()){
-                ans.push_back(nums[i]);
-            }
-            else{
-                int index = binary(ans,nums[i]);
-                ans[index] = nums[i];
-            }
-        }
-
-        return ans.size();
-
-
-
+        int n = nums.size();
+        vector<vector<int>>dp(n+1,vector<int>(n+1,0));
+        return solve(nums,0,-1,dp);
     }
 };
