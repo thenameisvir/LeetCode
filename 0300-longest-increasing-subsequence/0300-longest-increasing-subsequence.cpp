@@ -4,7 +4,7 @@ public:
         int s = 0;
         int e = ans.size()-1;
         int m = s+(e-s)/2;
-        int vir = ans.size()-1;
+        int vir = -1;
         while(s<=e){
             if(ans[m]>=target){
                 vir = m;
