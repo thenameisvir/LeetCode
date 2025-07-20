@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1293-three-consecutive-odds](https://github.com/thenameisvir/LeetCode/tree/master/1293-three-consecutive-odds) |
 | [1325-path-with-maximum-probability](https://github.com/thenameisvir/LeetCode/tree/master/1325-path-with-maximum-probability) |
 | [1333-sort-the-jumbled-numbers](https://github.com/thenameisvir/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
+| [1367-maximum-height-by-stacking-cuboids](https://github.com/thenameisvir/LeetCode/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1388-greatest-sum-divisible-by-three](https://github.com/thenameisvir/LeetCode/tree/master/1388-greatest-sum-divisible-by-three) |
 | [1397-search-suggestions-system](https://github.com/thenameisvir/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1435-xor-queries-of-a-subarray](https://github.com/thenameisvir/LeetCode/tree/master/1435-xor-queries-of-a-subarray) |
@@ -208,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0987-reveal-cards-in-increasing-order](https://github.com/thenameisvir/LeetCode/tree/master/0987-reveal-cards-in-increasing-order) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/thenameisvir/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1333-sort-the-jumbled-numbers](https://github.com/thenameisvir/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
+| [1367-maximum-height-by-stacking-cuboids](https://github.com/thenameisvir/LeetCode/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1388-greatest-sum-divisible-by-three](https://github.com/thenameisvir/LeetCode/tree/master/1388-greatest-sum-divisible-by-three) |
 | [1397-search-suggestions-system](https://github.com/thenameisvir/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/thenameisvir/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
@@ -504,6 +506,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1196-filling-bookcase-shelves](https://github.com/thenameisvir/LeetCode/tree/master/1196-filling-bookcase-shelves) |
 | [1240-stone-game-ii](https://github.com/thenameisvir/LeetCode/tree/master/1240-stone-game-ii) |
 | [1250-longest-common-subsequence](https://github.com/thenameisvir/LeetCode/tree/master/1250-longest-common-subsequence) |
+| [1367-maximum-height-by-stacking-cuboids](https://github.com/thenameisvir/LeetCode/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1388-greatest-sum-divisible-by-three](https://github.com/thenameisvir/LeetCode/tree/master/1388-greatest-sum-divisible-by-three) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/thenameisvir/LeetCode/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/thenameisvir/LeetCode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
