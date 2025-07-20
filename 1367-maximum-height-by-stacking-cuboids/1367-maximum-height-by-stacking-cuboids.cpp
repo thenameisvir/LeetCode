@@ -14,19 +14,19 @@ public:
 
         for(int i=n-1;i>=0;i--){
             for(int j=i-1;j>=-1;j--){
-                 int inc = 0;
-        if(j==-1 || check(nums[i],nums[j])){
-            inc = nums[i][2] + prev[i+1];
-        }
+                int inc = 0;
+            if(j==-1 || check(nums[i],nums[j])){
+                inc = nums[i][2] + prev[i+1];
+            }
+            int exc = 0 + prev[j+1];
 
-        int exc = 0 + prev[j+1];
-
-         curr[j+1] =  max(inc,exc);
+             curr[j+1] =  max(inc,exc);
             }
             prev = curr;
         }
 
-        return curr[0];
+    return curr[0];
+
     }
     int maxHeight(vector<vector<int>>& nums) {
         for(auto &i:nums){
@@ -34,9 +34,8 @@ public:
         }
 
         sort(nums.begin(),nums.end());
-        
+
         int ans = tab(nums);
         return ans;
-
     }
 };
