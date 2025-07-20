@@ -19,21 +19,23 @@ public:
     }
     int tab(vector<int>&nums){
         int n = nums.size();
-        vector<vector<int>>dp(n+1,vector<int>(n+1,0));
+        vector<int>curr(n+1,0);
+        vector<int>prev(n+1,0);
 
         for(int i=n-1;i>=0;i--){
             for(int j=i-1;j>=-1;j--){
                 int inc = 0;
             if(j==-1 || nums[i]>nums[j]){
-                inc = 1 + dp[i+1][i+1];
+                inc = 1 + prev[i+1];
             }
-            int exc = 0 + dp[i+1][j+1];
+            int exc = 0 + prev[j+1];
 
-             dp[i][j+1] =  max(inc,exc);
+             curr[j+1] =  max(inc,exc);
             }
+            prev = curr;
         }
 
-    return dp[0][0];
+    return curr[0];
 
     }
     int lengthOfLIS(vector<int>& nums) {
