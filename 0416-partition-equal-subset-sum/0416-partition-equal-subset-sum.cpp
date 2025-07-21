@@ -23,26 +23,28 @@ public:
 
         int target = count / 2;
 
-        vector<vector<bool>> dp(n + 1, vector<bool>(target + 1, false));
+        
+        vector<bool>curr(target+1,false);
+        vector<bool>prev(target+1,false);
         // base case k according fill kia hai isko
-        for(int i=0;i<=n;i++){
-            dp[i][0] = true;
-        }
+        curr[0] = true;
+        prev[0] = true;
 
         for(int i=n-1;i>=0;i--){
             for(int j=0;j<=target;j++){
                 bool inc = false;
                 if(j-nums[i]>=0){
-                inc = dp[i + 1][j - nums[i]];
+                inc = prev[j - nums[i]];
                 }
                  
-                 bool exc = dp[i + 1][j];
+                 bool exc = prev[j];
 
-                 dp[i][j] = inc || exc;
+                 curr[j] = inc || exc;
             }
+            prev = curr;
         }
 
-        return dp[0][target];
+        return curr[target];
 
 
     }
