@@ -1,59 +1,53 @@
 class Solution {
 public:
-    bool isSafe(int x,int y,map<pair<int,int>,bool>&vis,vector<vector<char>>& arr){
-        if(x>=0 && x<arr.size() && y>=0 && y<arr[0].size() && !vis[{x,y}] && arr[x][y]=='1'){
+    bool isOkay(vector<vector<char>>& nums,map<pair<int,int>,bool>&vis,int x,int y){
+        if(x>=0 && y>=0 && x<nums.size() && y<nums[x].size() && !vis[{x,y}] && nums[x][y]=='1'){
             return true;
         }
-        else{
-            return false;
-        }
+
+        return false;
     }
-    void bfs(int srcx, int srcy,map<pair<int,int>,bool>&vis,vector<vector<char>>& arr){
-        // yaha ayega main logic ab tak apan ne original calls kar di hai
-        // yaha par mai initial state maintain krne ki sochunga
+    void solve(int i,int j,map<pair<int,int>,bool>&vis,vector<vector<char>>& nums){
+
+        vis[{i,j}] = true;
         queue<pair<int,int>>q;
-        q.push({srcx,srcy});
-        vis[{srcx,srcy}] = true;
-        // yaha tak apan logo ne inital state maintain karli hai ab kaam shuru karte hai
+        q.push({i,j});
+
         while(!q.empty()){
-            auto frontPair = q.front();
-            int tempx = frontPair.first;
-            int tempy = frontPair.second;
-            q.pop();
+            auto front = q.front(); q.pop();
+            int tempx = front.first;
+            int tempy = front.second;
 
-            int dx[] = {-1,0,1,0};
-            int dy[] = {0,1,0,-1};
+            int dx[] = {0,0,1,-1};
+            int dy[] = {1,-1,0,0};
 
-            // yaha par yaad rakhne wali cheese ye hai ki loop 4 tak chalayenge kyuki 4 
-            // conditions hi toh check karni hai 
             for(int i=0;i<4;i++){
-                int newX = tempx + dx[i];
-                int newY = tempy + dy[i];
+                int newx = tempx + dx[i];
+                int newy = tempy + dy[i];
 
-                if(isSafe(newX,newY,vis,arr)){
-                    // toh apna kaam kardo chup chaap
-                    vis[{newX,newY}] = true;
-                    q.push({newX,newY});
+                if(isOkay(nums,vis,newx,newy)){
+                    vis[{newx,newy}] = true;
+                    q.push({newx,newy});
                 }
+
+
             }
         }
+
+
     }
-    int numIslands(vector<vector<char>>& arr) {
-        int count = 0; // yahi toh return karna hai mujhe after all
-        map<pair<int,int>,bool>vis; // isme mere indexes ayenge aur true mark karna hoga
-        for(int i=0;i<arr.size();i++){
-            for(int j=0;j<arr[i].size();j++){
-                // yaha ayega thoda bhot logic check
-                if(!vis[{i,j}] && arr[i][j]=='1'){
-                    bfs(i,j,vis,arr);
+    int numIslands(vector<vector<char>>& nums) {
+        map<pair<int,int>,bool>vis;
+        int count = 0;
+        for(int i=0;i<nums.size();i++){
+            for(int j=0;j<nums[i].size();j++){
+                if(!vis[{i,j}] && nums[i][j]=='1'){
+                    solve(i,j,vis,nums);
                     count++;
                 }
             }
         }
 
-
         return count;
-
-
     }
 };
