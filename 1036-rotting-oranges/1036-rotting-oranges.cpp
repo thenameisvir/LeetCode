@@ -1,65 +1,64 @@
 class Solution {
 public:
-    int count = 0;
-    
-    bool isSafe(int x, int y, vector<vector<int>>& arr, map<pair<int, int>, bool>& vis) {
-        if (x >= 0 && x < arr.size() && y >= 0 && y < arr[0].size() && !vis[{x, y}] && arr[x][y] == 1) {
+    bool isOkay(vector<vector<int>>& nums, int x, int y, map<pair<int,int>,bool>& vis) {
+        int n = nums.size();
+        int m = nums[0].size();
+        if(x >= 0 && x < n && y >= 0 && y < m && nums[x][y] == 1 && !vis[{x, y}]) {
             return true;
         }
         return false;
     }
 
-    void bfs(vector<vector<int>>& arr, map<pair<int, int>, bool>& vis, queue<pair<int, int>>& q) {
-        int dx[] = {-1, 0, 1, 0};
-        int dy[] = {0, 1, 0, -1};
+    int solve(vector<vector<int>>& nums, queue<pair<int,int>>& q, map<pair<int,int>,bool>& vis) {
+        int count = 0;
+        while(!q.empty()) {
+            int sz = q.size();  // snapshot of current level size
+            for(int i = 0; i < sz; i++) {
+                auto front = q.front(); q.pop();
+                int tempx = front.first;
+                int tempy = front.second;
 
-        while (!q.empty()) {
-            int size = q.size();
-            bool rotted = false;
+                int dx[] = {0, 1, -1, 0};
+                int dy[] = {1, 0, 0, -1};
 
-            while (size--){
-                auto topPair = q.front();
-                int tempx = topPair.first;
-                int tempy = topPair.second;
-                q.pop();  // ✅ Queue se remove karna zaroori hai
-
-                for (int i = 0; i < 4; i++) {
-                    int newX = tempx + dx[i];
-                    int newY = tempy + dy[i];
-
-                    if (isSafe(newX, newY, arr, vis)) {
-                        q.push({newX, newY});
-                        vis[{newX, newY}] = true;
-                        arr[newX][newY] = 2; // ✅ Fresh orange ko rotten mark karo
-                        rotted = true;
+                for(int k = 0; k < 4; k++) {
+                    int newx = tempx + dx[k];
+                    int newy = tempy + dy[k];
+                    if(isOkay(nums, newx, newy, vis)) {
+                        nums[newx][newy] = 2;
+                        vis[{newx, newy}] = true;
+                        q.push({newx, newy});
                     }
                 }
             }
-            if (rotted) count++; // ✅ Sirf ek level ke baad increment karna hai
+            count++;
         }
+        return count - 1;
     }
 
-    int orangesRotting(vector<vector<int>>& arr) {
-        map<pair<int, int>, bool> vis;
-        queue<pair<int, int>> q;
+    int orangesRotting(vector<vector<int>>& nums) {
+        map<pair<int,int>,bool> vis;
+        queue<pair<int,int>> q;
 
-        for (int i = 0; i < arr.size(); i++) {
-            for (int j = 0; j < arr[0].size(); j++) {
-                if (arr[i][j] == 2) {
+        for(int i = 0; i < nums.size(); i++) {
+            for(int j = 0; j < nums[i].size(); j++) {
+                if(nums[i][j] == 2) {
                     q.push({i, j});
                     vis[{i, j}] = true;
                 }
             }
         }
 
-        bfs(arr, vis, q);
-        
-        for (int i = 0; i < arr.size(); i++) {
-            for (int j = 0; j < arr[0].size(); j++) {
-                if (arr[i][j] == 1) return -1; // ✅ Agar fresh orange bacha hai toh -1 return karo
+        int ans = solve(nums, q, vis);
+
+        for(int i = 0; i < nums.size(); i++) {
+            for(int j = 0; j < nums[i].size(); j++) {
+                if(nums[i][j] == 1) {
+                    return -1; // fresh orange still left
+                }
             }
         }
 
-        return count;
+        return ans < 0 ? 0 : ans; // edge case: no fresh or rotten oranges initially
     }
 };
