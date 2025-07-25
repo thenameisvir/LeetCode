@@ -1,25 +1,33 @@
 class Solution {
 public:
-    int solve(string &s, string &t, int i, int j, vector<vector<int>> &dp) {
-        if(j == t.size()) return 1; // t fully matched
-        if(i == s.size()) return 0; // s exhausted
+    const int MOD = 1e9 + 7;
 
-        if(dp[i][j] != -1) return dp[i][j];
+    int tab(string s, string t){
+        int n = s.size();
+        int m = t.size();
 
-        int include = 0;
-        if(s[i] == t[j]) {
-            include = solve(s, t, i + 1, j + 1, dp); // match and move both
+        vector<vector<long long>> dp(n + 1, vector<long long>(m + 1, 0));
+
+        for(int i = 0; i <= n; i++){
+            dp[i][m] = 1;  // If t is empty
         }
 
-        int exclude = solve(s, t, i + 1, j, dp); // skip s[i]
+        for(int i = n - 1; i >= 0; i--){
+            for(int j = m - 1; j >= 0; j--){
+                long long inc = 0, exc = 0;
+                if(s[i] == t[j]){
+                    inc = dp[i + 1][j + 1];
+                }
+                exc = dp[i + 1][j];
 
-        return dp[i][j] = include + exclude;
+                dp[i][j] = (inc + exc) % MOD;
+            }
+        }
+
+        return dp[0][0]; // Final answer
     }
 
     int numDistinct(string s, string t) {
-        int n = s.size();
-        int m = t.size();
-        vector<vector<int>> dp(n + 1, vector<int>(m + 1, -1));
-        return solve(s, t, 0, 0, dp);
+        return tab(s, t);
     }
 };
