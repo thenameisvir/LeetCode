@@ -1,44 +1,31 @@
 class Solution {
 public:
-    int solve(string &s1,string &s2,int i,int j,vector<vector<int>>&dp){
-        // base case baad me 
-        if(i>=s1.size() && j<s2.size()){
-            int sum = 0;
-            while(j<s2.size()){
-                sum+=int(s2[j]);
-                j++;
-                
-            }
-            return sum;
-        }
-
-        if(j>=s2.size() && i<s1.size()){
-            int sum = 0;
-            while(i<s1.size()){
-                sum+=int(s1[i]);
-               i++;
-            }
-             return sum;
-        }
-
-        if(i>=s1.size() && j>=s2.size()) return 0;
-
-
-        if(dp[i][j]!=-1){
-            return dp[i][j];
-        }
-
-        if(s1[i]==s2[j]){
-            return solve(s1,s2,i+1,j+1,dp);
-        }
-
-        int op1 = int(s1[i]) + solve(s1,s2,i+1,j,dp);
-        int op2 = int(s2[j]) + solve(s1,s2,i,j+1,dp);
-
-        return dp[i][j] = min(op1,op2);
-    }
     int minimumDeleteSum(string s1, string s2) {
-        vector<vector<int>>dp(s1.size() + 1,vector<int>(s2.size()+1,-1));
-        return solve(s1,s2,0,0,dp);
+        int n = s1.size(), m = s2.size();
+        vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
+
+        // Base case: delete remaining characters when one string is empty
+        for (int i = n - 1; i >= 0; i--) {
+            dp[i][m] = int(s1[i]) + dp[i + 1][m];
+        }
+
+        for (int j = m - 1; j >= 0; j--) {
+            dp[n][j] = int(s2[j]) + dp[n][j + 1];
+        }
+
+        // Fill dp table bottom-up
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = m - 1; j >= 0; j--) {
+                if (s1[i] == s2[j]) {
+                    dp[i][j] = dp[i + 1][j + 1];
+                } else {
+                    int op1 = int(s1[i]) + dp[i + 1][j];   // delete from s1
+                    int op2 = int(s2[j]) + dp[i][j + 1];   // delete from s2
+                    dp[i][j] = min(op1, op2);
+                }
+            }
+        }
+
+        return dp[0][0];
     }
 };
