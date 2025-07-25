@@ -489,6 +489,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/thenameisvir/LeetCode/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/thenameisvir/LeetCode/tree/master/0072-edit-distance) |
 | [0085-maximal-rectangle](https://github.com/thenameisvir/LeetCode/tree/master/0085-maximal-rectangle) |
+| [0115-distinct-subsequences](https://github.com/thenameisvir/LeetCode/tree/master/0115-distinct-subsequences) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/thenameisvir/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0132-palindrome-partitioning-ii](https://github.com/thenameisvir/LeetCode/tree/master/0132-palindrome-partitioning-ii) |
 | [0198-house-robber](https://github.com/thenameisvir/LeetCode/tree/master/0198-house-robber) |
@@ -569,6 +570,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0058-length-of-last-word](https://github.com/thenameisvir/LeetCode/tree/master/0058-length-of-last-word) |
 | [0071-simplify-path](https://github.com/thenameisvir/LeetCode/tree/master/0071-simplify-path) |
 | [0072-edit-distance](https://github.com/thenameisvir/LeetCode/tree/master/0072-edit-distance) |
+| [0115-distinct-subsequences](https://github.com/thenameisvir/LeetCode/tree/master/0115-distinct-subsequences) |
 | [0125-valid-palindrome](https://github.com/thenameisvir/LeetCode/tree/master/0125-valid-palindrome) |
 | [0132-palindrome-partitioning-ii](https://github.com/thenameisvir/LeetCode/tree/master/0132-palindrome-partitioning-ii) |
 | [0179-largest-number](https://github.com/thenameisvir/LeetCode/tree/master/0179-largest-number) |
