@@ -9,9 +9,13 @@ public:
 
         return false;
     }
-    bool solve(string&s, vector<string>& arr, int index){
+    bool solve(string&s, vector<string>& arr, int index,vector<int>&dp){
         if(index==s.size()){
             return true;
+        }
+
+        if(dp[index]!=-1){
+            return dp[index];
         }
 
         string str = "";
@@ -21,13 +25,36 @@ public:
             str+=s[i];
 
             if(check(str,arr)){
-                flag = flag || solve(s,arr,i+1);
+                flag = flag || solve(s,arr,i+1,dp);
             }
         }
 
-        return flag;
+        return dp[index] =  flag;
+    }
+    bool tab(string s, vector<string>& arr){
+        vector<int>dp(s.size()+1,-1);
+        dp[s.size()] = 1;
+        int n = s.size();
+        for(int i = n-1;i>=0;i--)
+        {
+        string str = "";
+        bool flag = false;
+
+        for(int j=i;j<s.size();j++){
+            str+=s[j];
+
+            if(check(str,arr)){
+                flag = flag || solve(s,arr,j+1,dp);
+            }
+        }
+
+         dp[i] =  flag;
+        }
+
+        return dp[0];
     }
     bool wordBreak(string s, vector<string>& arr) {
-        return solve(s,arr,0);
+        vector<int>dp(s.size()+1,-1);
+        return tab(s,arr);
     }
 };
