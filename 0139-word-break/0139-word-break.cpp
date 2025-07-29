@@ -44,7 +44,7 @@ public:
             str+=s[j];
 
             if(check(str,arr)){
-                flag = flag || solve(s,arr,j+1,dp);
+                flag = flag || dp[j+1];
             }
         }
 
