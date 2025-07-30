@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0134-gas-station](https://github.com/thenameisvir/LeetCode/tree/master/0134-gas-station) |
 | [0136-single-number](https://github.com/thenameisvir/LeetCode/tree/master/0136-single-number) |
 | [0139-word-break](https://github.com/thenameisvir/LeetCode/tree/master/0139-word-break) |
+| [0140-word-break-ii](https://github.com/thenameisvir/LeetCode/tree/master/0140-word-break-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/thenameisvir/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/thenameisvir/LeetCode/tree/master/0162-find-peak-element) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/thenameisvir/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
@@ -307,6 +308,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/thenameisvir/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0139-word-break](https://github.com/thenameisvir/LeetCode/tree/master/0139-word-break) |
+| [0140-word-break-ii](https://github.com/thenameisvir/LeetCode/tree/master/0140-word-break-ii) |
 | [0141-linked-list-cycle](https://github.com/thenameisvir/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/thenameisvir/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/thenameisvir/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
@@ -495,6 +497,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/thenameisvir/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0132-palindrome-partitioning-ii](https://github.com/thenameisvir/LeetCode/tree/master/0132-palindrome-partitioning-ii) |
 | [0139-word-break](https://github.com/thenameisvir/LeetCode/tree/master/0139-word-break) |
+| [0140-word-break-ii](https://github.com/thenameisvir/LeetCode/tree/master/0140-word-break-ii) |
 | [0198-house-robber](https://github.com/thenameisvir/LeetCode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/thenameisvir/LeetCode/tree/master/0213-house-robber-ii) |
 | [0221-maximal-square](https://github.com/thenameisvir/LeetCode/tree/master/0221-maximal-square) |
@@ -548,6 +551,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0070-climbing-stairs](https://github.com/thenameisvir/LeetCode/tree/master/0070-climbing-stairs) |
 | [0139-word-break](https://github.com/thenameisvir/LeetCode/tree/master/0139-word-break) |
+| [0140-word-break-ii](https://github.com/thenameisvir/LeetCode/tree/master/0140-word-break-ii) |
 | [0241-different-ways-to-add-parentheses](https://github.com/thenameisvir/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
 | [1013-fibonacci-number](https://github.com/thenameisvir/LeetCode/tree/master/1013-fibonacci-number) |
 ## Queue
@@ -578,6 +582,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/thenameisvir/LeetCode/tree/master/0125-valid-palindrome) |
 | [0132-palindrome-partitioning-ii](https://github.com/thenameisvir/LeetCode/tree/master/0132-palindrome-partitioning-ii) |
 | [0139-word-break](https://github.com/thenameisvir/LeetCode/tree/master/0139-word-break) |
+| [0140-word-break-ii](https://github.com/thenameisvir/LeetCode/tree/master/0140-word-break-ii) |
 | [0179-largest-number](https://github.com/thenameisvir/LeetCode/tree/master/0179-largest-number) |
 | [0205-isomorphic-strings](https://github.com/thenameisvir/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0214-shortest-palindrome](https://github.com/thenameisvir/LeetCode/tree/master/0214-shortest-palindrome) |
@@ -951,6 +956,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0014-longest-common-prefix](https://github.com/thenameisvir/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0139-word-break](https://github.com/thenameisvir/LeetCode/tree/master/0139-word-break) |
+| [0140-word-break-ii](https://github.com/thenameisvir/LeetCode/tree/master/0140-word-break-ii) |
 | [0386-lexicographical-numbers](https://github.com/thenameisvir/LeetCode/tree/master/0386-lexicographical-numbers) |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/thenameisvir/LeetCode/tree/master/0440-k-th-smallest-in-lexicographical-order) |
 | [1397-search-suggestions-system](https://github.com/thenameisvir/LeetCode/tree/master/1397-search-suggestions-system) |
@@ -1002,6 +1008,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/thenameisvir/LeetCode/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/thenameisvir/LeetCode/tree/master/0047-permutations-ii) |
 | [0113-path-sum-ii](https://github.com/thenameisvir/LeetCode/tree/master/0113-path-sum-ii) |
+| [0140-word-break-ii](https://github.com/thenameisvir/LeetCode/tree/master/0140-word-break-ii) |
 | [0526-beautiful-arrangement](https://github.com/thenameisvir/LeetCode/tree/master/0526-beautiful-arrangement) |
 | [0800-letter-case-permutation](https://github.com/thenameisvir/LeetCode/tree/master/0800-letter-case-permutation) |
 ## Game Theory
