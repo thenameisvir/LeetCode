@@ -79,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0890-lemonade-change](https://github.com/thenameisvir/LeetCode/tree/master/0890-lemonade-change) |
 | [0902-minimum-number-of-refueling-stops](https://github.com/thenameisvir/LeetCode/tree/master/0902-minimum-number-of-refueling-stops) |
 | [0906-walking-robot-simulation](https://github.com/thenameisvir/LeetCode/tree/master/0906-walking-robot-simulation) |
+| [0909-stone-game](https://github.com/thenameisvir/LeetCode/tree/master/0909-stone-game) |
 | [0921-spiral-matrix-iii](https://github.com/thenameisvir/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [0926-find-and-replace-pattern](https://github.com/thenameisvir/LeetCode/tree/master/0926-find-and-replace-pattern) |
 | [0932-monotonic-array](https://github.com/thenameisvir/LeetCode/tree/master/0932-monotonic-array) |
@@ -469,6 +470,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0592-fraction-addition-and-subtraction](https://github.com/thenameisvir/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0650-2-keys-keyboard](https://github.com/thenameisvir/LeetCode/tree/master/0650-2-keys-keyboard) |
 | [0870-magic-squares-in-grid](https://github.com/thenameisvir/LeetCode/tree/master/0870-magic-squares-in-grid) |
+| [0909-stone-game](https://github.com/thenameisvir/LeetCode/tree/master/0909-stone-game) |
 | [1013-fibonacci-number](https://github.com/thenameisvir/LeetCode/tree/master/1013-fibonacci-number) |
 | [1240-stone-game-ii](https://github.com/thenameisvir/LeetCode/tree/master/1240-stone-game-ii) |
 | [1642-water-bottles](https://github.com/thenameisvir/LeetCode/tree/master/1642-water-bottles) |
@@ -520,6 +522,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/thenameisvir/LeetCode/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0863-sum-of-distances-in-tree](https://github.com/thenameisvir/LeetCode/tree/master/0863-sum-of-distances-in-tree) |
 | [0902-minimum-number-of-refueling-stops](https://github.com/thenameisvir/LeetCode/tree/master/0902-minimum-number-of-refueling-stops) |
+| [0909-stone-game](https://github.com/thenameisvir/LeetCode/tree/master/0909-stone-game) |
 | [1013-fibonacci-number](https://github.com/thenameisvir/LeetCode/tree/master/1013-fibonacci-number) |
 | [1196-filling-bookcase-shelves](https://github.com/thenameisvir/LeetCode/tree/master/1196-filling-bookcase-shelves) |
 | [1240-stone-game-ii](https://github.com/thenameisvir/LeetCode/tree/master/1240-stone-game-ii) |
@@ -1024,6 +1027,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0375-guess-number-higher-or-lower-ii](https://github.com/thenameisvir/LeetCode/tree/master/0375-guess-number-higher-or-lower-ii) |
+| [0909-stone-game](https://github.com/thenameisvir/LeetCode/tree/master/0909-stone-game) |
 | [1240-stone-game-ii](https://github.com/thenameisvir/LeetCode/tree/master/1240-stone-game-ii) |
 ## String Matching
 |  |
