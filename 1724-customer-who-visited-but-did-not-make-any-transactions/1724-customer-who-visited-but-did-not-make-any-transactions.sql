@@ -5,3 +5,7 @@ from Visits v left join Transactions t
 on v.visit_id = t.visit_id ) as temp
 where transaction_id is null
 group by customer_id;
+
+
+
+
